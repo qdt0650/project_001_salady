@@ -1,0 +1,176 @@
+/* css/src/portfolio_store.css */
+
+
+
+/* ----------------------------------------------------------------------- */
+#wrap {
+  width:1280px; min-width: 1280px;
+  height:auto;
+  margin:auto;
+  background-color:transparent;
+}
+
+/* #headBox --------------------------------------------------------------- */
+#headBox{
+  width:100%; height:100px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #588355;
+  background-color: #fff;
+}
+
+.logo {
+  float:left;
+  width:150px; height:100px;
+  margin-left:100px;
+  margin-top:5px;
+  background-image: url("../../img/salady/salady_logo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 30%;
+}
+
+
+.navigation{
+  float:right;
+  width:1000px; height:80px;
+  margin-top: 30px;
+  margin-right:20px;
+}
+
+.navigation ul {
+  width:auto; height:auto;
+  margin-top:5px;
+}
+
+.navigation li {
+  float:left;
+  width:150px; height:auto;
+  margin-right:20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.navigation li > a {
+  width:100%; height:100%;
+  font-size: 2rem;
+  color:#000000;
+}
+li:last-child{ margin-right:0};
+
+
+/* #linkBox --------------------------------------------------------- */
+#linkBox{
+  width:100%; height: 800px;
+  margin-top:50px;
+  background-color: #fff;
+}
+
+h2 {
+  width:100%; height:70px;
+  margin-top:50px;
+  font-size: 40px;
+  text-align: left;
+  border-bottom: 1px solid #808080;
+}
+
+.area_search {
+  float:left;
+  width:180px; height:65px;
+  margin-top:50px;
+  margin-left:100px;
+  background-color: #fff;
+  background-image: url("../../img/salady/line.jpg");
+  background-repeat: no-repeat;
+  background-position:right;
+  background-size:20%;
+  border:1px solid #000000;
+}
+
+.area_search input{
+  float:left;
+  width:100%; height:70px;
+}
+
+.area_search input::placeholder {
+  font-size:1.75rem;
+  color:#000000;
+}
+
+.store_search {
+  float:left;
+  margin-top:50px;
+  margin-left:50px;
+  width:700px; height:65px;
+  background-color: #fff;
+  border:1px solid #000000;
+}
+
+.store_search input {
+  float:left;
+  margin-left:30px;
+  width:100%; height:70px;
+}
+.store_search input::placeholder {
+  font-size: 1.75rem;
+  color:#000000;
+}
+
+.btn_search {
+  float:left;
+  width:120px; height:65px;
+  margin-top:50px;
+  margin-bottom:50px;
+  margin-left:40px;
+  background-color: #fff;
+  border:1px solid #000000;
+}
+
+.click {
+  width:100%; height:auto;
+  margin-top:30px;
+}
+
+
+.click ul {
+  width:100%; height:60px;
+  margin:auto;
+}
+
+.click  li {
+  float:left;
+  width:100px; height:50px;
+  margin-top:-10px;
+  color:#000000;
+  font-size: 2rem;
+  text-align: left;
+  background-image: url("../../img/salady/search.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 30%;
+}
+
+.region {
+  width:100%; height:300px;
+  margin:auto;
+}
+
+.region ul {
+  float:left;
+  width:100%; height:500px;
+  margin-left:30px;
+  background-image: url("../../img/salady/store.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.region li {
+  float:right;
+  width: 400px; height:400px;
+  margin-top:50px;
+  color:#000000;
+  font-size: 10px;
+  border:1px solid #000000;
+}
+
+
+/* #footBox ----------------------------------------------- */
