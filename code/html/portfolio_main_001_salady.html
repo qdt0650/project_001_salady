@@ -4,6 +4,12 @@
 <head>
   <meta charset="UTF-8">
 
+   <!-- font.google : roboto mono -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+
   <!-- css design -->
   <link rel="stylesheet" href="../css/base/reset.css">
   <link rel="stylesheet" href="../css/base/common.css">
@@ -36,27 +42,57 @@
     </header>
     <!-- // #headBox -->
 
-    <section id="promotionBox" class="clearfix">
-      <h2>
-        <span class="blind">광고</span>
-      </h2>
-      <div class="pro_01">
-        <span class="blind">시즌별 계절메뉴</span>
+    <section id="promotionBox">
+      <h2 class="blind">salady seasonal menu</h2>
+
+      <div class="pro_banner_01">
+        <h3 class="blind">salady 광고 배너</h3>
+        <div class="button">
+          <ul class="clearfix blind_wrap">
+            <li class="act"><a href="#viewArea_01"><span>광고1</span></a></li>
+            <li><a href="#viewArea_02"><span>광고2</span></a></li>
+            <li><a href="#viewArea_03"><span>광고3</span></a></li>
+          </ul>
+        </div>
+        <div class="pro_view">
+          <ul class="clearfix">
+            <li id="viewArea_01">
+              <div>
+                <h4>salady seasonal menu</h4>
+                <h5>new '우삼겹 메밀면 샐러디'</h5>
+                <p>
+                  아삭아삭한 오이와 양파, <br />
+                  상큼 달달한 옥수수 위로 토핑 된 쫄깃한 우삼겹과 담백한 메밀면
+                </p>
+              </div>
+              </li>
+            <li id="viewArea_02">2021 new menu</li>
+            <li id="viewArea_03">hi hello</li>
+          </ul>
+        </div>
       </div>
+          <!-- <dl>
+            <dt>new  '우삼겹 메밀면 샐러디'</dt>
+            <dd>
+              <br />
+              아삭아삭한 오이와 양파, <br />
+              상큼 달달한 옥수수 위로 토핑 된 쫄깃한 우삼겹과 담백한 메밀면
+            </dd>
+          </dl> -->
     </section>
     <!-- // #promotionBox -->
 
     <article id="viewBox" class="clearfix" >
-      <h2>Best Menu</h2>
+      <h2>best menu</h2>
       <div class="best_menu">
         <ul>
-          <li class="menu_01"'
+          <li class="menu_01">
             <p>칠리베이컨 chill bacon</p>
           </li>
           <li class="menu_02">
             <p>탄단지 tandanji</p>
           </li>
-          <li class="menu_03">'
+          <li class="menu_03">
             <p>연어 salmon</p>
           </li>
           <li class="menu_04">
@@ -175,5 +211,8 @@
   </div>
 
   <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/js_portfolio_main_001_salady.js"></script>
 </body>
 </html>
