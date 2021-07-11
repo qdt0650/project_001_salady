@@ -22,7 +22,7 @@ img, br, hr, div,
 form, fieldset, legend, input, label, video, audio, textarea, select {
   margin:0; padding:0; border:0; outline:0;
   font-size: 16px; font-size:100%;
-vertical-align: baseline;  }
+  vertical-align: baseline;  }
 
 ul, ol, li { list-style:none; }
 
