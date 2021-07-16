@@ -4,11 +4,12 @@
 <head>
   <meta charset="UTF-8">
 
-   <!-- font.google : roboto mono -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
-
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
 
   <!-- css design -->
   <link rel="stylesheet" href="../css/base/reset.css">
@@ -21,7 +22,7 @@
 <body>
   <!-- layout -->
   <div id="wrap">
-    <header id="headBox">
+    <header id="headBox" class="clearfix">
         <h1 class="logo">
           <a href="../img/salady/salady_logo.jpg">
             <span class="blind">salady</span>
@@ -31,10 +32,10 @@
           <h2 class="blind">salady navigation</h2>
           <div class="navigation">
             <ul class="clearfix">
-              <li><a href="portfolio_sub_menu.html">메뉴</a></li>
-              <li><a href="portfolio_sub_information.html">영양정보</a></li>
-              <li><a href="portfolio_sub_store.html">매장</a></li>
-              <li><a href="portfolio_sub_event.html">새소식</a></li>
+              <li><a href="./portfolio_sub_menu.html">메뉴</a></li>
+              <li><a href="./portfolio_sub_information.html">영양정보</a></li>
+              <li><a href="./portfolio_sub_store.html">매장</a></li>
+              <li><a href="./portfolio_sub_event.html">새소식</a></li>
               <li><a href="./company_intro.html">회사소개</a></li>
             </ul>
           </div>
@@ -58,11 +59,11 @@
           <ul class="clearfix">
             <li id="viewArea_01">
               <div>
-                <!-- <h4>건강한 패스트푸드의 시작</h4>
+                <h4>건강한 패스트푸드의 시작</h4>
                 <p>
                   맛있어야 한다 ! <br />
                   건강해야 한다 !
-                </p> -->
+                </p>
               </div>
               </li>
             <li id="viewArea_02">2021 new menu</li>
@@ -176,26 +177,49 @@
     <!-- // #topicBox -->
 
     <article id="subviewBox">
-      <h2>
-        <span class="blind">새소식</span>
-      </h2>
-      <ul>
-        <li class="open">salady 안양점 5월17일 open!</li>
-        <li class="event">open event!</li>
-      </ul>
-      <div class="more_btn">
-        <button type="more">
-          <a href="./portfolio_sub_event.html" target="_blank">more</a>
-          </button>
-      </div>
+      <h2>event</h2>
+      <h3>샐러디의 다양한 이벤트를 확인해보세요!</h3>
+        <ul class="event_list">
+          <li>
+            <div class="thum">
+              <img src="../img/salady/notice_01.jpg" alt="">
+            </div>
+            <div class="tt">
+              <a href="./portfolio_sub_event.html" target="_blank">여러분들의 레시피 or 토핑 취향은?
+                <img src="../img/salady/next.png" alt="">
+              </a>
+            </div>
+          </li>
+          <li>
+            <div class="thum">
+              <img src="../img/salady/notice_02.jpg" alt="">
+            </div>
+            <div class="tt">
+              <a href="./portfolio_sub_event.html" target="_blank">
+              샐러디와 여름철 식단대비 event 
+              <img src="../img/salady/next.png" alt="">
+            </a>
+
+            </div>
+          </li>
+          <li>
+            <div class="thum">
+              <img src="../img/salady/notice_03.jpg" alt="">
+            </div>
+            <div class="tt">
+              <a href="./portfolio_sub_event.html" target="_blank">
+                샐러드 new소스 출시 !
+              <img src="../img/salady/next.png" alt="">
+              </a>
+            </div>
+          </li>
+        </ul>
     </article>
     <!-- // #subviewBox -->
 
     <article id="linkBox">
-      <h2>
-        <img src="../img/salady/point.jpg" alt="위치">
-        Salady 매장 찾기
-      </h2>
+      <img src="../img/salady/point.png" alt="위치">
+      <h2>Salady 매장 찾기</h2>
 
       <div class="area_search">
         <input type="text" placeholder="지역 선택" >
@@ -207,15 +231,25 @@
 
       <div class="btn_search">
           <ul class="click">
-            <li>검색</li>
+            <a href="./portfolio_sub_store.html">
+              검색
+            </a>
           </ul>
       </div>
+
+      
     </article>
     <!-- // #linkBox -->
 
+    
+    <aside id="sideBox">
+      <div class="top_btn"><a href="#">top</a></div>
+    </aside>
+    <!-- // #sideBox -->
+
     <footer id="footBox">
       <h2 class="logo">
-        <span class="blind">회사정보</span>
+          <span class="blind">회사정보</span>
       </h2>
       <address class="company_info">
         <ul>
@@ -232,23 +266,17 @@
         <ul>
           <li class="insta">
             <a href="https://www.instagram.com/saladykorea" target="_blank">
-            <span class="blind">
-              insta
-            </span>
+            <span class="blind">insta</span>
           </a>
           </li>
           <li class="facebook">
             <a href="https://www.facebook.com/saladykorea/" target="_blank">
-              <span class="blind">
-                facebook
-              </span>
+              <span class="blind">facebook</span>
             </a>
           </li>
           <li class="blog">
             <a href="https://blog.naver.com/saladykorea" target="_blank">
-            <span class="blind">
-              blog
-            </span>
+            <span class="blind">blog</span>
             </a>
           </li>
         </ul>
@@ -263,5 +291,6 @@
   <script src="../js/jquery/jquery-ui.min.js"></script>
   <script src="../js/src/js_portfolio_main_001_salady.js"></script>
   <script src="../js/src/js_portfolio_main_001_salady-2.js"></script>
+  <script src="../js/src/js_portfolio_main_001_salady-3.js"></script>
 </body>
 </html>

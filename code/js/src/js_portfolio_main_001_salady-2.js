@@ -3,6 +3,8 @@
 (function($){
   // jQuery
 
+  // 광고배너 슬라이드 기능
+
   // 변수
   var slideBtn = $('.slide_btn');
   var nextBtn = slideBtn.children('.next');

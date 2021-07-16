@@ -3,6 +3,9 @@
 (function($){
   // jQuery
 
+
+  // promotionBox 인디케이터 기능
+
   var proBanner = $('.pro_banner_01');
   var button = proBanner.find('.button');
   var butUl = button.find('ul');

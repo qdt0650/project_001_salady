@@ -1,1 +1,51 @@
 /* css/src/portfolio_sub_menu.css */
+
+#wrap {
+  position: relative;
+  width:100%; min-width:1280px; max-width: 1920px;
+  height:auto;  margin:auto;
+  background-color: #fcfcfc;
+}
+
+/* #headBox --------------------------------------------------------------- */
+#headBox{
+  width:100%; height:auto;
+  margin:auto;
+  box-sizing: border-box;
+}
+
+#headBox > .logo {
+  float:left;
+  width:170px; height:150px;
+  margin-left:150px; 
+  background-image: url("../../img/salady/salady_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
+
+.navigation ul {
+  float:left;
+  width:70%; height:auto;
+  margin-left:200px;
+}
+
+.navigation li {
+  float:left;
+  width:150px; height:auto;
+  margin-top:60px; margin-left:50px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.navigation li > a {
+  font-size: 1.7rem;
+  text-align: center;
+  color:#000000; 
+}
+
+li:last-child { margin-right:0; }
+
+.navigation a:hover { border-bottom:1.7px solid #000000; }
+.navigation a:focus { outline:0; text-shadow:1px 1px 1px #808080;}
