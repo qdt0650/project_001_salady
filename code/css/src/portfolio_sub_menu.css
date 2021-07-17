@@ -1,20 +1,18 @@
 /* css/src/portfolio_sub_menu.css */
 
 #wrap {
-  position: relative;
   width:100%; min-width:1280px; max-width: 1920px;
   height:auto;  margin:auto;
-  background-color: #fcfcfc;
 }
 
 /* #headBox --------------------------------------------------------------- */
-#headBox{
-  width:100%; height:auto;
+#headBox{ 
+  width:100%; height:150px;
   margin:auto;
-  box-sizing: border-box;
+  background-color: #caa;
 }
 
-#headBox > .logo {
+#headBox>.logo {
   float:left;
   width:170px; height:150px;
   margin-left:150px; 
@@ -22,30 +20,180 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 50%;
+  background-color: #faa;
 }
 
+#naviBox {
+  float:right;
+  width:80%; height:auto;
+}
 
-.navigation ul {
-  float:left;
-  width:70%; height:auto;
-  margin-left:200px;
+.navigation {
+  width:90%; height:150px;
+  background-color: #da0;
+}
+
+.navigation ul { 
+  width:100%; height:150px; 
+  background-color: #aaa;
 }
 
 .navigation li {
   float:left;
-  width:150px; height:auto;
-  margin-top:60px; margin-left:50px;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.navigation li > a {
-  font-size: 1.7rem;
-  text-align: center;
+  width:200px; height:50px;
+  margin:auto; margin-top: 60px; margin-left: 50px;
   color:#000000; 
+  font-size: 1.6rem; text-align: center;
+  background-color: #acc;
 }
 
 li:last-child { margin-right:0; }
 
 .navigation a:hover { border-bottom:1.7px solid #000000; }
 .navigation a:focus { outline:0; text-shadow:1px 1px 1px #808080;}
+
+
+/* #innerBox --------------------------------------------------------------- */
+#innerBox{
+  width:100%; height:auto;
+  margin:auto;
+}
+
+#innerBox h3 {
+  font-size: 70px;  text-align: center;
+  line-height: 500px;
+  color:#000000;
+}
+
+.inner_title {
+  width:100%;height:500px;
+  margin:auto;
+  background-image: url("../../img/salady/store.png");
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-attachment:fixed;
+}
+
+/* #menuBox ----------------------------------------------------------------- */
+#menuBox {
+  width:100%; height:auto;
+  margin:auto;
+}
+
+.menu_list {
+  width:100%; height:100px;
+  margin:auto;
+}
+.menu_list ul { width:100%; height:auto; }
+
+.menu_list li {
+  float:left;
+  width:7%; height:30px;
+  font-size:5px;
+  text-align: center; line-height: 30px;
+  margin-top:50px;  margin-left: 250px;
+  border-bottom: 1px solid #777;
+}
+
+.menu_list li:last-child { margin-right: 0px;}
+
+.menu_list button {
+  width:100%; height:100%; 
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+.menu_list li.act button {
+  color:#da0;
+  background-color:#808080;
+}
+/* ------------------------------------- */
+
+
+.menu_img {
+  width:100%; height:700px;
+  background-color:#ccc;
+  overflow: hidden;
+}
+
+.bowl {
+  display: block;
+  width:100%; height:auto;
+  background-color: #aca;
+}
+
+.bowl ul {
+  width:100%; height:700px;
+  margin:auto;
+}
+.bowl li {
+  float:left;
+  width:20%; height:170px;
+  margin-left:150px; margin-top: 100px;
+  text-align: center;
+  background-size:50%;
+  background-repeat: no-repeat;  background-position: center;
+}
+.bowl_01 { background-image: url("../../img/salady/menu_01.png"); }
+.bowl_02 { background-image: url("../../img/salady/menu_01.png"); }
+.bowl_03 { background-image: url("../../img/salady/menu_01.png"); }
+.bowl_04 { background-image: url("../../img/salady/menu_01.png"); }
+.bowl_05 { background-image: url("../../img/salady/menu_01.png"); }
+
+.bowl h3 { margin-top: 180px; }
+.bowl p { text-transform: uppercase; }
+/* ------------------------------ */
+.sand {
+  width:100%; height:auto;
+  background-color: #da0;
+}
+
+.sand ul {
+  width:100%; height:700px;
+  margin:auto;
+}
+
+.sand li {
+  float:left;
+  width:20%; height:170px;
+  margin-left:150px; margin-top: 100px;
+  text-align: center;
+  background-size:50%;
+  background-repeat: no-repeat;  background-position: center;
+}
+.sand_01 { background-image: url("../../img/salady/chicken_tomato.png"); }
+.sand_02 { background-image: url("../../img/salady/egg_bacon.png"); }
+.sand_03 { background-image: url("../../img/salady/shallot_salmon.png"); }
+
+
+.sand h3 { margin-top: 180px; }
+.sand p { text-transform: uppercase; }
+/* ------------------------------ */
+.salad {
+  display: block;
+  width:100%; height:auto;
+  background-color: #aca;
+}
+
+.salad ul {
+  width:100%; height:700px;
+  margin:auto;
+}
+.salad li {
+  float:left;
+  width:20%; height:170px;
+  margin-left:150px; margin-top: 100px;
+  text-align: center;
+  background-size:50%;
+  background-repeat: no-repeat;  background-position: center;
+}
+.salad_01 { background-image: url("../../img/salady/menu_01.png"); }
+.salad_02 { background-image: url("../../img/salady/menu_02.png"); }
+.salad_03 { background-image: url("../../img/salady/menu_03.png"); }
+.salad_04 { background-image: url("../../img/salady/menu_04.png"); }
+.salad_05 { background-image: url("../../img/salady/menu_05.png"); }
+.salad_06 { background-image: url("../../img/salady/menu_06.png"); }
+
+.salad h3 { margin-top: 180px; }
+.salad p { text-transform: uppercase; }
