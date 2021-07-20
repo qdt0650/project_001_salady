@@ -50,10 +50,7 @@
   
   
   /* #promotionBox -------------------------------------------------------- */
-  #promotionBox {
-    width:100%; height:auto;
-    margin:auto;
-  }
+  #promotionBox {  width:100%; height:auto;  margin:auto; }
   
   .pro_banner_01 {
     position: relative;
@@ -63,13 +60,9 @@
     background-color: #daa;
   }
   
-  .pro_view {
-    overflow: hidden;
-    width:100%; height:780px;
-  }
+  .pro_view { overflow: hidden;  width:100%; height:780px; }
   
   .pro_view ul { width:300%; height:100%; margin:auto; }
-  
   .pro_view li {
     float:left;
     width:calc(100% / 3); height:100%;
@@ -78,16 +71,8 @@
     color:#fff;
   }
   
-  #viewArea_01{
-    background-image: url("../../img/salady/pro_01.png");
-    background-color: #f1c856;
-    background-repeat: no-repeat;  background-size: 50%;
-    background-position:80% 0;
-  }
-  
   .pro_view div {
-    margin-top:200px;
-    margin-left:100px;
+    margin-top:200px;  margin-left:100px;
     color:#585A4B;
     text-transform:capitalize;
   }
@@ -99,23 +84,9 @@
     color:#000000;
   }
   
-  #viewArea_02{
-    background-image: url("../../img/salady/pro_02.png");
-    background-color: #3374b4;
-    background-repeat: no-repeat;  background-size:60%;
-    background-position:50% 0;
-  }
-  #viewArea_03{
-    background-image: url("../../img/salady/pro_03.png");
-    background-color: #17633d;
-    background-repeat: no-repeat;  background-size: 70%;
-    background-position: 50% 0;
-  }
-  
   .button {
     position: absolute;
-    width:100%; height:50px; 
-    margin:auto;
+    width:100%; height:50px; margin:auto;
     left:0; right:0; bottom:0;
     text-align: center;
   }
@@ -146,6 +117,24 @@
   .button a:hover { box-shadow:3px 2px 2px #808080;}
   .button a:focus { outline:0;  box-shadow:3px 3px 3px #808080;}
   
+  #viewArea_01{
+    background-image: url("../../img/salady/pro_01.png");
+    background-color: #f1c856;
+    background-repeat: no-repeat;  background-size: 50%;
+    background-position:80% 0;
+  }
+  #viewArea_02{
+    background-image: url("../../img/salady/pro_02.png");
+    background-color: #3374b4;
+    background-repeat: no-repeat;  background-size:60%;
+    background-position:50% 0;
+  }
+  #viewArea_03{
+    background-image: url("../../img/salady/pro_03.png");
+    background-color: #17633d;
+    background-repeat: no-repeat;  background-size: 70%;
+    background-position: 50% 0;
+  }
   /* #viewBox --------------------------------------------------------------- */
   #viewBox{
     width: 100%; height:auto;
@@ -262,7 +251,7 @@
     border-radius:50px;
   }
 
-  .menu_btn h5 { font-size:15px; color:#000000;  }
+  .menu_btn h5 { text-align: center; font-size:15px; color:#000000;  }
   
   .menu_btn img {
     float:right;
@@ -284,7 +273,7 @@
   .slide_btn {
     display: inline-block;
     width:100%; height:50px;
-    margin:auto; 
+    margin:auto;
   }
   
   .slide_btn button {
@@ -293,8 +282,16 @@
     margin:auto; margin-top:175px; 
     margin-left:100px; margin-right:100px;
   }
-  .next { float:right; }
-  .prev { float:left; }
+  .next { 
+    float:right; 
+    background-image: url("../../img/salady/next.png");
+    background-repeat: no-repeat;
+  }
+  .prev { 
+    float:left; 
+    background-image: url("../../img/salady/prev.png");
+    background-repeat: no-repeat;
+  }
   
   .topic_area {
     overflow: hidden;

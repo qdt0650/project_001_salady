@@ -262,7 +262,7 @@
     border-radius:50px;
   }
 
-  .menu_btn h5 { margin-left:-5%;  font-size:13px; color:#000000;  }
+  .menu_btn h5 { text-align: center; font-size:13px; color:#000000;  }
   
   .menu_btn img {
     float:right;
@@ -271,8 +271,7 @@
   }
   
   .menu_btn h5:hover { color:#17633d; }
-
-  .menu_prev_btn { width:0; height:0; overflow: hidden; }
+  .menu_prev_btn { display: none;}
   
   
   
@@ -291,12 +290,22 @@
   
   .slide_btn button {
     display: inline-block;
-    width:20px; height:20px;
+    width:30px; height:30px;
     margin:auto; margin-top:175px; 
     margin-left:100px; margin-right:100px;
   }
-  .next { float:right; }
-  .prev { float:left; }
+  .next { 
+    float:right; 
+    background-image: url("../../img/salady/next.png");
+    background-repeat: no-repeat;
+    background-position: center; background-size: contain;
+  }
+  .prev { 
+    float:left; 
+    background-image: url("../../img/salady/prev.png");
+    background-repeat: no-repeat;
+    background-position: center; background-size: contain;
+  }
   
   .topic_area {
     overflow: hidden;

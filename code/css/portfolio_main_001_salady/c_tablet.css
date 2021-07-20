@@ -191,6 +191,19 @@
     text-align: center;
     color:#000000;
   }
+  .menu_btn h5 { display: none;}
+
+  .menu_btn img {
+    display: inline-block;
+    width:10%; height:auto;
+    margin:auto; margin-top:-30%;
+    font-size: 0;
+  }
+  
+  .menu_prev_btn img {
+    float:left;
+    width:50%; height:auto;
+  }
   .menu_01 {
     background-image: url("../../img/salady/menu_01.png");
     background-size:20%;
@@ -239,19 +252,6 @@
     background-position: center;  background-repeat: no-repeat;
   }
 
-  .menu_btn h5 { width:0; height:0; overflow: hidden;}
-
-  .menu_btn img {
-    display: inline-block;
-    width:10%; height:auto;
-    margin:auto; margin-top:-30%;
-    font-size: 0;
-  }
-  
-  .menu_prev_btn img {
-    float:left;
-    width:50%; height:auto;
-  }
   
   
   
