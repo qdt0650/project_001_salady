@@ -33,10 +33,6 @@ a {
   i, b, u { font-weight:400; font-style:normal; text-decoration: none; }
 
 button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
   appearance: none;
 
   border:0;  opacity: 1;  cursor:pointer;
