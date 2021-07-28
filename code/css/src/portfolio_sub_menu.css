@@ -1,17 +1,16 @@
 /* css/src/portfolio_sub_menu.css */
 
+
 #wrap {
-  width:100%; min-width:1280px; max-width: 1920px;
+  position: relative;
+  width:100%; min-width:1600px; max-width: 1920px;
   height:auto;  margin:auto;
 }
 
 /* #headBox --------------------------------------------------------------- */
-#headBox{ 
-  width:100%; height:150px;
-  margin:auto;
-}
+#headBox{ width:100%; height:auto; }
 
-#headBox h1 {
+#headBox > .logo {
   float:left;
   width:170px; height:150px;
   margin-left:150px; 
@@ -20,26 +19,34 @@
   background-position: center;
   background-size: 50%;
 }
+.logo a { display: block; width:100%; height:100%; }
 
-#naviBox { float:right; width:80%; height:auto; }
-
-.navigation { width:90%; height:150px; }
+#naviBox {
+  float:right;
+  width:80%; height:150px;
+  margin:auto;
+}
 
 .navigation ul { width:100%; height:150px; }
 
 .navigation li {
   float:left;
-  width:200px; height:50px;
-  margin:auto; margin-top: 60px; margin-left: 50px;
+  width:10%; height:30px;
+  margin:auto;  
+  margin-top: 60px;  margin-left: 80px;
+  text-align: center;
+}
+
+.navigation li > a {
+  font-size: 1.6rem;
+  text-align: center;
   color:#000000; 
-  font-size: 1.6rem; text-align: center;
 }
 
 li:last-child { margin-right:0; }
 
 .navigation a:hover { border-bottom:1.7px solid #000000; }
 .navigation a:focus { outline:0; text-shadow:1px 1px 1px #808080;}
-
 
 /* #innerBox --------------------------------------------------------------- */
 #innerBox{
@@ -48,18 +55,19 @@ li:last-child { margin-right:0; }
 }
 
 #innerBox h3 {
-  font-size: 70px;  text-align: center;
+  font-size: 70px; font-weight:500;
+  text-align: center;
+  text-transform:uppercase; 
   line-height: 500px;
   color:#000000;
 }
 
 .inner_title {
-  width:100%;height:500px;
+  width:100%;height:600px;
   margin:auto;
-  background-image: url("../../img/salady/store.png");
-  background-size:100%;
+  background-image: url("../../img/salady/inner_img.png");
+  background-size:100% 60%;
   background-repeat: no-repeat;
-  background-position: 50% 50%;
   background-attachment:fixed;
 }
 
@@ -101,14 +109,12 @@ li:last-child { margin-right:0; }
 
 .menu_img {
   width:100%; height:700px;
-  background-color:#ccc;
   overflow: hidden;
 }
 
 .bowl {
   display: block;
   width:100%; height:auto;
-  background-color: #aca;
 }
 
 .bowl ul {
@@ -124,17 +130,16 @@ li:last-child { margin-right:0; }
   background-repeat: no-repeat;  background-position: center;
 }
 .bowl_01 { background-image: url("../../img/salady/menu_01.png"); }
-.bowl_02 { background-image: url("../../img/salady/menu_01.png"); }
-.bowl_03 { background-image: url("../../img/salady/menu_01.png"); }
-.bowl_04 { background-image: url("../../img/salady/menu_01.png"); }
-.bowl_05 { background-image: url("../../img/salady/menu_01.png"); }
+.bowl_02 { background-image: url("../../img/salady/menu_02.png"); }
+.bowl_03 { background-image: url("../../img/salady/menu_03.png"); }
+.bowl_04 { background-image: url("../../img/salady/menu_04.png"); }
+.bowl_05 { background-image: url("../../img/salady/menu_05.png"); }
 
 .bowl h3 { margin-top: 180px; }
 .bowl p { text-transform: uppercase; }
 /* ------------------------------ */
 .sand {
   width:100%; height:auto;
-  background-color: #da0;
 }
 
 .sand ul {
@@ -161,7 +166,6 @@ li:last-child { margin-right:0; }
 .salad {
   display: block;
   width:100%; height:auto;
-  background-color: #aca;
 }
 
 .salad ul {

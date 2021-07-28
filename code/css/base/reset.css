@@ -8,6 +8,7 @@ html, body {
   width:100%; height:100%;
   margin:0; padding:0;
   font-family:'Noto Sans KR', sans-serif; 
+  font-family: 'Roboto', sans-serif;
   color:#171717;
   color:var(--color-black);
   line-height:1;
@@ -28,9 +29,10 @@ ul, ol, li { list-style:none; }
 
 a {
   color:inherit;
-  text-decoration: none;}
+  text-decoration: none;
+}
 
-  i, b, u { font-weight:400; font-style:normal; text-decoration: none; }
+i, b, u { font-weight:400; font-style:normal; text-decoration: none; }
 
 button {
   appearance: none;
@@ -53,5 +55,7 @@ input[type="email"],
 input[type="search"],
 input[type="tel"]{border-radius:0; appearance:none;}
 
-hr { border:0; margin:0; padding:0; 
-  border-bottom:1px solid #333; }
+hr { 
+  border:0; margin:0; padding:0; 
+  border-bottom:1px solid #333; 
+}
