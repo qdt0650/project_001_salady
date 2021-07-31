@@ -45,15 +45,5 @@
   });
 
 
-  // topic 다음, 이전 버튼
-
-  var topicBox = $('#topicBox');
-  var slideBtn = topicBox.children('.slide_btn');
-  var nextBtn = slideBtn.children('.next');
-  var prevBtn = slideBtn.children('.prev');
-
-  var topicArea = $('.topic_area');
-  var topicUl = topicArea.children('ul');
-  var topicLi = topicUl.children('li');
 
 })(jQuery);
