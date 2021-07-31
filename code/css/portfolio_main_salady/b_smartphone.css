@@ -49,7 +49,6 @@
   /* #promotionBox -------------------------------------------------------- */
   #promotionBox {
     width:100%; height:auto; max-width:767px;
-    margin:auto;
   }
   
   .pro_banner_01 {
@@ -132,7 +131,7 @@
   /* #viewBox --------------------------------------------------------------- */
   #viewBox{
     position: relative;
-    width: 100%; height:25rem;
+    width: 100%; height:400px;
     margin:auto; margin-top: 1.875rem;
     box-sizing: border-box;
   }
@@ -147,8 +146,9 @@
   #viewBox h3 { width:0; height:0; overflow:hidden; }
   
   .menu_btn {
-    position: absolute;
-    bottom:8.125rem; left:3.125rem; right:3.125rem;
+    position: absolute;  z-index:100;
+    width:auto; height:0;
+    bottom:15rem; left:3.125rem; right:3.125rem;
   }
   .menu_btn button {
     width:50px; height:20px;
@@ -174,11 +174,11 @@
     box-sizing: border-box;
   }
   
-  .menu_tab ul { width:300%; height:100%; }
+  .menu_tab ul { width:900%; height:100%; }
   
   .menu_tab li {
     float:left; position: relative;
-    width:calc(100% / 3); height:100%;
+    width:calc(100% / 9); height:100%;
     margin-top:-50px;
     background-size: auto 30%;
     background-position:center;  background-repeat: no-repeat;
@@ -198,6 +198,13 @@
   .menu_tab li:nth-child(1) {background-image: url("../../img/salady/menu_01.png");}
   .menu_tab li:nth-child(2) {background-image: url("../../img/salady/menu_02.png");}
   .menu_tab li:nth-child(3) {background-image: url("../../img/salady/menu_03.png");}
+  .menu_tab li:nth-child(3) {background-image: url("../../img/salady/menu_03.png");}
+  .menu_tab li:nth-child(4) {background-image: url("../../img/salady/menu_03.png");}
+  .menu_tab li:nth-child(5) {background-image: url("../../img/salady/menu_03.png");}
+  .menu_tab li:nth-child(6) {background-image: url("../../img/salady/menu_03.png");}
+  .menu_tab li:nth-child(7) {background-image: url("../../img/salady/menu_03.png");}
+  .menu_tab li:nth-child(8) {background-image: url("../../img/salady/menu_03.png");}
+  .menu_tab li:nth-child(9) {background-image: url("../../img/salady/menu_03.png");}
 
   
   /* #topicBox ----------------------------------------------------------- */
@@ -207,22 +214,6 @@
     /* margin-top:-5%; */ /* js에서 가변성으로 %갚체크후 적용 */
     margin-top:-20px;
   }
-  
-  .slide_btn {
-    display: inline-block;
-    width:100%; height:70px;
-    margin:auto; 
-  }
-  
-  .slide_btn button {
-    display: none;
-    /* display: inline-block; */
-    width:20px; height:20px;
-    margin:auto; margin-top:110px; 
-    margin-left:10%; margin-right:10%;
-  }
-  /* .next { display: none; }
-  .prev { display: none; } */
   
   .topic_area {
     overflow: hidden;
@@ -246,13 +237,12 @@
   .topic_area li > p { display: none; }
   
   .topic_01 {
-    background-color: #333;
+    background-color: #FFF1C5;
     background-image: url("../../img/salady/topic_01.png");
     background-repeat: no-repeat;
-    background-size:45%; background-position: 60% 50%;
-    background-attachment:fixed;
+    background-size:25%; background-position: 60% 50%;
+    /* background-attachment:fixed; */
   }
-  .topic_02 { background-color: #cca; }
 
   /* #subviewBox ------------------------------------------------------------ */
   #subviewBox {
