@@ -1,4 +1,4 @@
-/* css/src/portfolio_sub_menu_02.css  */
+/* css/src/portfolio_sub_menu_06.css  */
 
 
 /* #headBox --------------------------------------------------------------- */
@@ -47,7 +47,7 @@ li:last-child { margin-right:0; }
 .bowl_01 {
   float:left;
   width:50%; height:100%;
-  background-image: url("../../img/salady/menu_01.png");
+  background-image: url("../../img/salady/menu_10.png");
   background-repeat: no-repeat;
   background-size: 50% auto; background-position: center;
   box-sizing: border-box;
@@ -172,4 +172,3 @@ li:last-child { margin-right:0; }
 .facebook { background-image: url("../../img/salady/facebook.png"); }
 
 .blog { background-image: url("../../img/salady/blog.png"); }
-
