@@ -51,10 +51,7 @@
   
   
   /* #promotionBox -------------------------------------------------------- */
-  #promotionBox {
-    width:100%; height:auto;
-    margin:auto;
-  }
+  #promotionBox { width:100%; height:auto; }
   
   .pro_banner_01 {
     position: relative;
@@ -62,10 +59,7 @@
     margin:auto;
   }
   
-  .pro_view {
-    overflow: hidden;
-    width:100%; height:450px;
-  }
+  .pro_view { overflow: hidden; width:100%; height:450px; }
   
   .pro_view ul { width:300%; height:100%; margin:auto; }
   
@@ -76,41 +70,7 @@
     font-size:20px;
     color:#fff;
   }
-  
-  #viewArea_01{
-    background-image: url("../../img/salady/pro_01.png");
-    background-color: #f1c856;
-    background-repeat: no-repeat;  background-size: contain;
-    background-position:80% 0;
-  }
-  
-  .pro_view div {
-    margin-top:10%;
-    margin-left:10%;
-    color:#585A4B;
-    text-transform:capitalize;
-  }
-  
-  .pro_view p {
-    margin-top:5%;
-    font-size:40px;  font-weight: 400;
-    line-height:60px;
-    color:#000000;
-  }
-  
-  #viewArea_02{
-    background-image: url("../../img/salady/pro_02.png");
-    background-color: #3374b4;
-    background-repeat: no-repeat;  background-size:60%;
-    background-position:50% 0;
-  }
-  #viewArea_03{
-    background-image: url("../../img/salady/pro_03.jpg");
-    background-color: #17633d;
-    background-repeat: no-repeat;  background-size: 70%;
-    background-position: 50% 0;
-  }
-  
+
   .button {
     position: absolute;
     width:100%; height:50px; 
@@ -144,6 +104,24 @@
   .button li.act a { width:2.5rem;  background-color: #e6e6e6; }
   .button a:hover { box-shadow:3px 2px 2px #808080;}
   .button a:focus { outline:0;  box-shadow:3px 3px 3px #808080;}
+
+  #viewArea_01{
+    background-image: url("../../img/salady/pro_01.png");
+    background-color: #f1c856;
+    background-repeat: no-repeat;  background-size:90% 100%;
+    background-position:80% 0;
+  }
+  #viewArea_02{
+    background-image: url("../../img/salady/pro_02.jpg");
+    background-repeat: no-repeat;  background-size:100%;
+    background-position:center;
+  }
+  #viewArea_03{
+    background-image: url("../../img/salady/pro_03.png");
+    background-repeat: no-repeat;  background-size: 60% 100%;
+    background-color: #3F81C2;
+    background-position: center;
+  }
   
 
   /* #viewBox --------------------------------------------------------------- */
@@ -166,7 +144,7 @@
   .menu_btn {
     position: absolute; z-index:100;
     width:auto; height:0;
-    bottom:180px; left:5%; right:5%;
+    bottom:225px; left:25px; right:5px;
   }
   .menu_btn button {
     width:50px; height:25px;
@@ -197,7 +175,7 @@
     float:left; position: relative;
     width:calc(100% / 9); height:100%;
     margin-top:-50px;
-    background-size: auto 40%;
+    background-size: auto 30%;
     background-position:center;  background-repeat: no-repeat;
   }
   
@@ -259,48 +237,36 @@
     background-color: #FFF1C5;
     background-image: url("../../img/salady/topic_01.png");
     background-repeat: no-repeat;
-    background-size:45%; background-position: 70% 50%;
+    background-size:30%; background-position: 80% 50%;
     background-attachment:fixed;
   }
   
   
   /* #subviewBox ------------------------------------------------------------ */
 
-
-  #subviewBox {
-    width:100%; height:auto; 
-    margin:auto; margin-top:5%;
-  }
+  #subviewBox { width:100%; height:auto; margin-top:5%; }
   #subviewBox h2 {
     text-align: center; text-transform: capitalize;
-    font-size: 1.8rem;  
-    font-weight: 500;  line-height: 70px;
+    font-size: 1.8rem; font-weight: 500;  
+    line-height: 70px;
   }
-  #subviewBox h3 { 
-    width:0; height:0;
-    overflow: hidden;
-  }
+  #subviewBox h3 { width:0; height:0; overflow: hidden; }
   
-  .event_list {
-    overflow: hidden;
-    width:100%; height:400px;
-    margin:auto; margin-top:5%;
-  }
+  .event_list { overflow: hidden; width:100%; height:400px; margin-top:5%; }
   
   .event_list li {
     display: inline-block;
-    width:32%; height:400px;
+    width:37%; height:400px;
     margin-left: 12%;
   }
   
   .thum img { width:100%; height:300px; margin: auto; }
   
   .tt {
-    padding:40px;
-    border-bottom: 1px solid #171717;
-    font-size: 1rem; font-weight: 500;
-    text-align: left;
-    text-transform: capitalize;
+    padding:30px;
+    border-bottom: 0.5px solid #171717;
+    font-size: 1rem;
+    text-align: left;  text-transform: capitalize;
   }
   .tt img { float:right; width:5%; height:20px; margin-right: -10%; }
 
@@ -308,40 +274,30 @@
   /* #linkBox ------------------------------------------------------------ */
   #linkBox{
     width:100%; height: 200px;
-    margin:auto; margin-top:5%;
+    margin:auto;  margin-top:50px;
+    padding-top:1rem;
     background-color: #e6e6e6;
   }
   
   #linkBox > img { width:0; height:0; overflow: hidden; }
   
   #linkBox > h2 {
-    font-size: 30px;  text-align: center;
-    font-weight:400;
+    font-size: 30px; font-weight:400; 
+    text-align: center;
   }
   
   .area_search {
     float:left;
     width:10%; height:40px;
+    font-size: 0.9rem; text-align: center;
     margin-top:70px;  margin-left:15%;
-    /* background-image:; */
-    background-repeat: no-repeat;
-    background-position:95%;  background-size:15%;
     background-color: #fff;
     border:1px solid #000000;
   }
-  
-  .area_search input{
-    float:left;
-    width:100%; height:50px;
-    margin-left:5%;
-  }
-  
-  .area_search input::placeholder { font-size:15px; color:#000000; }
-  
   .store_search {
     float:left;
     margin-top:70px;  margin-left:5%;
-    width:35%; height:40px;
+    width:40%; height:40px;
     background-color: #fff;
     border:1px solid #000000;
   }
@@ -349,58 +305,46 @@
   .store_search input {
     float:left;
     width:100%; height:30px;
-    margin-left:5%; margin-top:2%;
   }
-  .store_search input::placeholder { font-size: 15px; color:#000000; }
+  .store_search input::placeholder { font-size: 0.9rem; color:#000000; }
   
   .btn_search {
     float:left;
-    width:7%; height:40px;
+    width:8%; height:40px;
     margin-top:70px;  margin-left:5%;
     background-color: #fff;
     border:1px solid #000000;
   }
-  
-  .click {  width:100%; height:auto;  margin-top:30px; }
-  
-  .click ul { width:100%; height:60px; margin:auto; }
-  
-  .click a {
-    float:left;
-    width:100px; height:50px;
-    margin-top:-20px; margin-left:5%;
-    font-size: 17px;  text-align: left;
-    background-image: url("../../img/salady/search.jpg");
-    background-repeat: no-repeat;
-    background-position: 55% 0;
-    background-size: 20%;
+  .btn_search > button {
+    width:100%; height:50px;
+    font-size: 0.9rem; text-align: left;
+    background-image: url("../../img/salady/search.png");
+    background-repeat: no-repeat; background-position: 90% 50%;
+    background-size: 20% auto;
   }
-  
   
   /* #sideBox ----------------------------------------- */
   #sideBox {
     position: fixed;
-    width:40px; height:60px; min-height: 60px;
-    bottom:100px; left:90%;
-    background-color: #acc;
+    width:40px; height:40px; min-height: 40px;
+    bottom:100px; left:93%;
+    box-sizing: border-box;
   }
   
   .top_btn {
     position: absolute;
     left:0; top:100%;
-    width:100%; height:50px;
-    margin-top: 10px;
-    background-color: #dad;
+    width:100%; height:30px;
   }
   
   .top_btn a {
     display: block;
-    width:100%; height:100%;
-    margin-top:20px;
-    font-size: 25px; 
-    text-align:center;  text-transform: capitalize;
+    width:100%; height:30px;
+    margin-top:40px; font-size: 0;
+    background-image: url("../../img/salady/top.png");
+    background-repeat: no-repeat; background-position: center; 
+    background-size: contain;
   }
-  
   
   /* #footBox ----------------------------------------------- */
   #footBox {
