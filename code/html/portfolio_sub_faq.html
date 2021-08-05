@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<!-- html/portfolio_sub_faq.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--[if IE]>
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/ie9js/ie9.min.js"></script>
+    <script src="../ie/csspie/PIE.js"></script>
+    <script src="../ie/responsive.min.js"></script>
+  <![endif]-->
+  <link rel="shortcut icon" href="../favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="../favicon.png">
+  
+  <!-- font.google : noto sans -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- fontawesome5 -->
+  <link rel="stylesheet" href="../fonts/fontawesome5/css/all.min.css">
+  
+  <!-- css design -->
+  <link rel="stylesheet" href="../css/base/reset.css">
+  <link rel="stylesheet" href="../css/base/common.css">
+  <link rel="stylesheet" href="../css/src/portfolio_sub_faq.css">
+
+  <title>Document</title>
+  
+</head>
+<body>
+  <!-- layout -->
+<div id="wrap">
+  <header id="headBox" class="clearfix">
+    <h1 class="logo">
+      <a href="./portfolio_main_salady.html">
+        <span class="blind">salady</span>
+      </a>
+    </h1>
+    <nav id="naviBox">
+      <h2 class="blind">salady navigation</h2>
+      <div class="navigation">
+        <ul class="clearfix">
+          <li><a href="./portfolio_sub_menu_01.html">메뉴</a></li>
+          <li><a href="./portfolio_sub_menu_02.html">영양정보</a></li>
+          <li><a href="./portfolio_sub_store.html">매장</a></li>
+          <li><a href="./portfolio_sub_event.html">새소식</a></li>
+          <li><a href="./portfolio_sub_company_intro.html">회사소개</a></li>
+        </ul>
+      </div>
+    </nav>
+</header>
+<!-- // #headBox -->
+
+<article id="innerBox">
+  <div class="inner_title">
+  <h2>event</h2>
+    <span class="blind">fixed_img</span>
+  </div>
+</article>
+<!-- // #innerBox -->
+
+<article id="eventBox">
+  <div class="event_list">
+    <ul>
+      <li><a href="./portfolio_sub_event.html">이벤트 및 프로모션</a></li>
+      <li><a href="./portfolio_sub_faq.html">faq</a></li>
+      <li><a href="./portfolio_sub_faq.html">공지사항</a></li>
+      <li><a href="./portfolio_sub_faq.html">sns</a></li>
+    </ul>
+  </div>
+</article>
+<!-- // #eventBox -->
+
+<article id="searchBox">
+  <h2>faq</h2>
+  <form action="" method="GET">
+    <fieldset>
+      <legend>faq 검색</legend>
+      <div class="list_search">
+        <label class="blind" for="selectSearch">질문 선택</label>
+        <select name="selectSearch" id="selectSearch">
+          <option value="전체">전체</option>
+          <option value="best질문">best질문</option>
+          <option value="주문">주문</option>
+          <option value="오류">오류</option>
+          <option value="홈페이지">홈페이지</option>
+          <option value="기타">기타</option>
+        </select>
+      </div>
+      <div class="faq_search">
+        <label for="faqSearch" class="blind">검색어를 입력해주세요.</label>
+        <input type="text" placeholder="검색어를 입력해주세요." name="faqSearch" id="faqSearch" value="" />
+      </div>
+      <div class="btn_search">
+        <button type="submit">검색</button>
+      </div>
+    </fieldset>
+  </form>
+</article>
+
+<section id="faqBox">
+  <div class="faq_list">
+    <ul>
+      <li><a href="./portfolio_sub_event.html">best 질문</a></li>
+      <li><a href="./portfolio_sub_faq.html">메뉴</a></li>
+      <li><a href="./portfolio_sub_faq.html">주문</a></li>
+      <li><a href="./portfolio_sub_faq.html">홈페이지</a></li>
+      <li><a href="./portfolio_sub_faq.html">오류</a></li>
+      <li><a href="./portfolio_sub_faq.html">이벤트</a></li>
+      <li><a href="./portfolio_sub_faq.html">기타</a></li>
+    </ul>
+  </div>
+
+  <div class="faq_note">
+    <dl>
+      <dt><button type="button" class="faq_top">단체 주문 가능한가요?</button></dt>
+      <dd>
+        단체 주문 접수 방법 안내드립니다. <br />
+        1. 공식 홈페이지에서 주문하기 > 단체주문 > 하단의 단체 주문 문의하기 <br />
+        2. 본사 대표번호인 1522-3473으로 연락 후 '일반문의'를 선택하신 후 단체명, 연락처, 배송날짜, 메뉴 및 수량
+        안내해주시면 주문과 배송 여부 확인하여 개별적으로 연락 드리고 있습니다.
+      </dd>
+    </dl>
+  </div>
+</section>
+
+  
+</div>
+  <!-- script -->
+  <script src="../js/jquery/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery/jquery-ui.min.js"></script>
+  <script src="../js/src/portfolio_sub_faq.js"></script>
+</body>
+</html>

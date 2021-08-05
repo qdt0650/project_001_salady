@@ -1,0 +1,200 @@
+/* css/src/portfolio_sub_event.css */
+
+#wrap {
+  width:100%; min-width:1600px; max-width: 1920px;
+  height:auto;
+}
+
+/* #headBox --------------------------------------------------------------- */
+#headBox{ width:100%; height:auto; }
+
+#headBox > .logo {
+  float:left;
+  width:170px; height:150px;
+  margin-left:150px; 
+  background-image: url("../../img/salady/salady_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.logo a { display: block; width:100%; height:100%; }
+
+#naviBox {
+  float:right;
+  width:80%; height:150px;
+  margin:auto;
+}
+
+.navigation ul { width:100%; height:150px; }
+
+.navigation li {
+  float:left;
+  width:10%; height:30px;
+  margin:auto;  
+  margin-top: 60px;  margin-left: 80px;
+  text-align: center;
+}
+
+.navigation li > a {
+  font-size: 1.6rem;
+  text-align: center;
+  color:#000000; 
+}
+
+li:last-child { margin-right:0; }
+
+.navigation a:hover { color: #207D3E; }
+.navigation a:focus { outline:0; color: #207D3E;}
+
+/* #innerBox --------------------------------------------------------------- */
+#innerBox{ width:100%; height:auto; }
+
+#innerBox h2 {
+  font-size: 4rem; font-weight:550;
+  text-align: center;
+  text-transform:uppercase; 
+  line-height: 550px;
+}
+
+.inner_title {
+  width:100%;height:600px;
+  margin:auto;
+  background-image: url("../../img/salady/sub_event/inner_img.png");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+/* #eventBox ----------------------------------------------------------------- */
+#eventBox { 
+  width:100%; height:100px; 
+  margin-top:150px; 
+}
+
+.event_list {
+  width:100%; height:100px;
+}
+.event_list ul {
+  width:50%; height:50px;
+  margin:auto;
+  border:0.1rem solid #333;
+}
+
+.event_list li {
+  float:left;
+  width:25%; height:50px;
+  text-align: center;
+}
+
+.event_list li:last-child { margin-right: 0px; }
+
+.event_list li:after,
+.event_list li::after {
+  content:""; display: block;
+  width:1px; height:50px;
+  transform:translateY(-100%);
+  background-color: #aaa;
+}
+.event_list li:first-child:after { width:0; height:0;}
+
+.event_list li > a  {
+  width:100%; height: 50px;
+  display: inline-block;
+  padding:1rem;
+  box-sizing: border-box;
+  font-size: 1.3rem; text-transform:uppercase;
+}
+
+.event_list li:nth-child(2) { color:#207D3E; }
+.event_list li a:focus,
+.event_list li a:hover { background-color: #f6f6f6; color:#207D3E; }
+
+/* #linkBox ------------------------------------------------------------ */
+#searchBox{
+  width:100%; height:200px;
+  margin-top:100px;
+}
+#searchBox h2 { 
+  width:100px; height:auto;
+  margin: auto;
+  font-size: 2rem; font-weight:400;
+  text-align: center; text-transform:uppercase;
+  border-top:0.15rem solid #333;
+}
+
+.list_search {
+  float:left;
+  width:5%; height:40px;
+  margin-top:50px;  margin-left:25%;
+  font-size: 1rem; text-align: center;
+  border:1px solid #000000;
+}
+
+.faq_search {
+  float:left;
+  width:30%; height:40px;
+  margin-top:50px;  margin-left:5%;
+  background-color: #fff;
+  border:1px solid #000000;
+}
+
+.faq_search input {
+  float:left;
+  width:100%; height:40px;
+}
+.faq_search input::placeholder { font-size: 1rem; }
+
+.btn_search {
+  float:left;
+  width:5%; height:40px;
+  margin-top:50px;  margin-left:5%;
+  background-color: #fff;
+  border:1px solid #000000;
+}
+
+.btn_search > button {
+  width:100%; height:40px;
+  font-size: 1rem; text-align: left;
+  background-image: url("../../img/salady/search.png");
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 90% 50%;
+}
+
+/* #faqBox ---------------------------------------------- */
+#faqBox { width:100%; height:100px; }
+
+.faq_list { width:100%; height:100px;}
+.faq_list ul {
+  width:50%; height:50px;
+  margin:auto;
+  border:0.1rem solid #eee;
+}
+
+.faq_list li {
+  float:left;
+  width:14.2%; height:50px;
+  text-align: center;
+}
+
+.faq_list li:last-child { margin-right: 0px; }
+
+.faq_list li:after,
+.faq_list li::after {
+  content:""; display: block;
+  width:1px; height:50px;
+  transform:translateY(-100%);
+  background-color: #eee;
+}
+.faq_list li:first-child:after { width:0; height:0;}
+
+.faq_list li > a  {
+  width:100%; height: 50px;
+  display: inline-block;
+  padding:1rem;
+  box-sizing: border-box;
+  font-size: 1rem; text-transform:uppercase;
+}
+
+.faq_list li a:focus,
+.faq_list ul a:hover { border-bottom:2px solid #207D3E; color:#207D3E; }

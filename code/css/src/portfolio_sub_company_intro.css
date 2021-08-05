@@ -1,0 +1,285 @@
+/* css/src/portfolio_sub_company_intro.css */
+
+#wrap {
+  width:100%; min-width:1600px; max-width: 1920px;
+  height:auto;
+}
+
+/* #headBox --------------------------------------------------------------- */
+#headBox{ width:100%; height:auto; }
+
+#headBox > .logo {
+  float:left;
+  width:170px; height:150px;
+  margin-left:150px; 
+  background-image: url("../../img/salady/salady_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+.logo a { display: block; width:100%; height:100%; }
+
+#naviBox {
+  float:right;
+  width:80%; height:150px;
+  margin:auto;
+}
+
+.navigation ul { width:100%; height:150px; }
+
+.navigation li {
+  float:left;
+  width:10%; height:30px;
+  margin:auto;  
+  margin-top: 60px;  margin-left: 80px;
+  text-align: center;
+}
+
+.navigation li > a {
+  font-size: 1.6rem;
+  text-align: center;
+  color:#000000; 
+}
+
+li:last-child { margin-right:0; }
+
+.navigation a:hover { color: #207D3E; }
+.navigation a:focus { outline:0; color: #207D3E;}
+
+/* #innerBox --------------------------------------------------------------- */
+#innerBox{ width:100%; height:auto; }
+
+#innerBox h2 {
+  font-size: 4rem; font-weight:550;
+  text-align: center;
+  text-transform:uppercase; 
+  line-height: 550px;
+}
+
+.inner_title {
+  width:100%;height:600px;
+  margin:auto;
+  background-image: url("../../img/salady/sub_company/brand_inner.png");
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+/* #brandBox ----------------------------------------------------------------- */
+#brandBox { width:100%; height:100px; }
+
+.brand_list {
+  width:100%; height:100px;
+  margin-top:100px;
+}
+.brand_list ul {
+  width:50%; height:50px;
+  margin:auto;
+  border:0.1rem solid #333;
+}
+
+.brand_list li {
+  float:left;
+  width:25%; height:50px;
+  text-align: center;
+}
+
+.brand_list li:last-child { margin-right: 0px; }
+
+.brand_list li:after,
+.brand_list li::after {
+  content:""; display: block;
+  width:1px; height:50px;
+  transform:translateY(-100%);
+  background-color: #aaa;
+}
+.brand_list li:first-child:after { width:0; height:0;}
+
+.brand_list li > a  {
+  width:100%; height: 50px;
+  display: inline-block;
+  padding:1rem;
+  box-sizing: border-box;
+  font-size: 1.3rem; text-transform:capitalize;
+}
+
+.brand_list li a:focus,
+.brand_list li a:hover { background-color: #f6f6f6; color:#207D3E; }
+/* -------------------------- */
+.brand_story {
+  width:100%; height:auto;
+  margin-top:100px;
+}
+
+.story {
+  width:100%; height:400px;
+}
+
+.story_tt {
+  float:left;
+  width:50%; height:400px;
+  margin-left:200px;
+  text-align: left;
+}
+.story_tt > h2 { font-size: 2rem; line-height: 150px;}
+.story_tt > p { font-size: 1rem; line-height:30px;}
+
+.story_img > img {
+  float:right;
+  width:30%; height:400px;
+  margin-right:100px;
+}
+/* -------------------------- */
+.brand_mission {
+  width: 100%; height:auto;
+  margin-top:100px;
+}
+.mission_list {
+  width:100%; height: 300px;
+  background:linear-gradient( #ececec, #dadada, #B3B2B29C ); 
+}
+
+.mission_tt {
+  float: left;
+  width:70%; height:300px;
+  text-align: center;
+}
+.mission_tt > h2 { font-size:2rem; line-height: 150px;}
+.mission_tt > p { font-size:1.3rem; line-height:50px; }
+
+.mission_img {
+  float:right;
+  width:30%; height: 300px;
+  margin-top:50px;
+}
+/* -------------------------- */
+.ceo_greeting {
+  width:100%; height:auto;
+  margin-top:150px;
+}
+
+.greeting { width:100%; height:400px; }
+
+.ceo_tt {
+  float:right;
+  width:50%; height:400px;
+  margin-right:100px;
+  text-align: left;
+}
+.ceo_tt > h2 { font-size: 2rem; line-height: 150px;}
+.ceo_tt > p { font-size: 1rem; line-height:30px;}
+
+.ceo_img > img {
+  float:left;
+  width:30%; height:400px;
+  margin-left: 100px;
+}
+/* -------------------------- */
+.contact { width:100%; height: auto; margin-top:150px; }
+
+.contact_table { 
+  width:50%; height:300px; 
+  margin:auto;
+}
+
+.contact_table caption { 
+  width:30%; height:30px;
+  margin:auto;
+  font-size: 2rem; padding:2rem; 
+  border-top:0.15rem solid #333;
+}
+
+.contact_table tr th {
+  width:10%; height:50px;
+  font-size: 1rem;
+  border:0.1rem solid #eee;
+}
+.contact_table tr td {
+  width:40%; height:50px;
+  padding-left:20px;
+  border:0.1rem solid #eee;
+}
+
+.map { width: 50%; height: auto; margin:auto; }
+.map iframe { width: 100%; height: 500px; border:0; }
+
+/* #sideBox ----------------------------------------- */
+#sideBox {
+  position: fixed;
+  width:5%; height:40px;
+  bottom:100px; left:95%;
+}
+
+.top_btn {
+  position: absolute;
+  left:0; top:100%;
+  width:100%; height:30px;
+}
+
+.top_btn a {
+  display: block;
+  width:100%; height:40px;
+  margin-top:40px; font-size: 0;
+  background-image: url("../../img/salady/top.png");
+  background-repeat: no-repeat; background-position: center; 
+  background-size: contain;
+}
+
+/* #footBox ----------------------------------------------- */
+ #footBox {
+  width:100%; height:auto;
+  margin-top:100px;
+  border-top: 1px solid #808080;
+}
+
+#footBox > .logo {
+  float:left;
+  width:150px; height:150px;
+  margin:auto;  margin-left:15%; margin-top: 40px;
+  background-image: url("../../img/salady/salady_logo.png");
+  background-repeat: no-repeat; background-position: center;
+  background-size: 50%;
+}
+
+.company_info ul {
+  float:left;
+  width:40%; height:200px;
+  margin-top:30px;  margin-left:10%;
+}
+
+.company_info li {
+  font-size: 16px;
+  line-height:30px; font-weight: 400;
+  color:#000000;
+}
+
+.info_03 { float:left; margin:auto; }
+.info_04 { float:left; margin-left:30px; }
+.info_05 { margin-top:30px; }
+
+.info_06 {
+  margin-top:30px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.sns {
+  float:left;
+  width:15%; height:auto;
+  margin-top:90px;
+}
+.sns ul { width:100%; height:50px; }
+.sns li {
+  float:left;
+  width:50px; height:50px;
+  margin-left:30px;
+  background-repeat: no-repeat;  background-position:center;
+  background-size : 100%;
+}
+.sns li > a { display:block; width:100%; height:100%; }
+
+.insta { background-image: url("../../img/salady/instagram.png"); }
+
+.facebook { background-image: url("../../img/salady/facebook.png"); }
+
+.blog { background-image: url("../../img/salady/blog.png"); }
