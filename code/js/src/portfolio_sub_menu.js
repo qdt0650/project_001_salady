@@ -25,7 +25,6 @@
 
   menuCon.on('click', function(){
     var thisI = $(this).index();
-    // console.log(thisI);
   });
 
 
