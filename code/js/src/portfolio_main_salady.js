@@ -1,20 +1,28 @@
 // portfolio_main_salady.js
 
 (function($){
-// jQuery
-
-  // promotionBox 인디케이터 기능
 
   var proBanner = $('.pro_banner_01');
   var button = proBanner.find('.button');
   var butUl = button.find('ul');
   var butLi = butUl.find('li');
   var butLink = butLi.find('a');
-
+  
   var proView = proBanner.find('.pro_view');
   var proViewUl = proView.find('ul');
-
-  var n = 1;
+  var proViewLi = proView.find('li');
+  var viewLiLen = proViewLi.length;
+  
+  var proBtn = proBanner.find('.pro_btn')
+  var nextBtn = proBtn.find('.pro_next_btn')
+  var prevBtn = proBtn.find('.pro_prev_btn')
+  
+  var n = 0;
+  var permission = true;
+  var indiSetFn = function(){
+    butLi.eq(n).addClass('act');
+    butLi.eq(n).siblings().removeClass('act');
+  };
 
   butLink.on('click', function(e){
     e.preventDefault();
@@ -22,14 +30,42 @@
     n = _thisI
 
     proViewUl.stop().animate({marginLeft : (-100 * n) + '%'});
-
-    butLi.eq(n).addClass('act');
-    butLi.eq(n).siblings().removeClass('act');
-
-    // console.log(n);
+    indiSetFn();
   });
 
+  nextBtn.on('click', function(e){
+    e.preventDefault();
+    if(permission){
+      permission = false;
+      n += 1;
+       if(n > viewLiLen-1){
+          n = 0;
+          proViewUl.stop().css({marginLeft: 100 +'%'});
+        }
+      proViewUl.stop().animate({marginLeft: -100 * n +'%'}, function(){
+          indiSetFn(n);   
+          permission = true;  
+      });
+    }
+  });
+
+  prevBtn.on('click', function(e){
+    e.preventDefault();
+    if(permission){
+      permission = false;
+      n -= 1;
+       if(n > viewLiLen-1){
+          n = 0;
+          proViewUl.stop().css({marginLeft: 100 +'%'});
+        }
+      proViewUl.stop().animate({marginLeft: -100 * n +'%'}, function(){
+          indiSetFn(n);   
+          permission = true;  
+      });
+    }
+  });
   
+
   // top버튼
 
   // 변수
@@ -47,3 +83,4 @@
 
 
 })(jQuery);
+
