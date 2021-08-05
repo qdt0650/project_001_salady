@@ -71,11 +71,9 @@ li:last-child { margin-right:0; }
   margin-top:150px; 
 }
 
-.event_list {
-  width:100%; height:100px;
-}
+.event_list { width:100%; height:100px; }
 .event_list ul {
-  width:50%; height:50px;
+  width:40%; height:50px;
   margin:auto;
   border:0.1rem solid #333;
 }
@@ -102,7 +100,7 @@ li:last-child { margin-right:0; }
   display: inline-block;
   padding:1rem;
   box-sizing: border-box;
-  font-size: 1.3rem; text-transform:uppercase;
+  font-size: 1.2rem; text-transform:uppercase;
 }
 
 .event_list li:nth-child(2) { color:#207D3E; }
@@ -127,7 +125,7 @@ li:last-child { margin-right:0; }
   width:5%; height:40px;
   margin-top:50px;  margin-left:25%;
   font-size: 1rem; text-align: center;
-  border:1px solid #000000;
+  border:1px solid #333;
 }
 
 .faq_search {
@@ -135,7 +133,7 @@ li:last-child { margin-right:0; }
   width:30%; height:40px;
   margin-top:50px;  margin-left:5%;
   background-color: #fff;
-  border:1px solid #000000;
+  border:1px solid #333;
 }
 
 .faq_search input {
@@ -149,7 +147,7 @@ li:last-child { margin-right:0; }
   width:5%; height:40px;
   margin-top:50px;  margin-left:5%;
   background-color: #fff;
-  border:1px solid #000000;
+  border:1px solid #333;
 }
 
 .btn_search > button {
@@ -198,5 +196,146 @@ li:last-child { margin-right:0; }
 
 .faq_list li a:focus,
 .faq_list ul a:hover { border-bottom:2px solid #207D3E; color:#207D3E; }
+
 /* --------------------- */
-.faq_note { width: 100%; height:1000px;}
+
+.faq_note { width: 100%; height:auto; }
+.faq_note h2 { 
+  width: 50%; height:auto; 
+  margin: auto;
+}
+
+.faq_note dl { 
+  width:50%; height: auto; 
+  margin:auto; margin-top:50px;
+  border-top:0.01rem solid #333;
+}
+.faq_note dt {
+  width:100%; height: 60px;
+  border-bottom: 0.01rem solid #333;
+
+}
+.faq_note dt .q {
+  float:left;
+  width:30px; height:30px;
+  font-size: 1.6rem; 
+  text-transform: uppercase; text-align: center;
+  margin-top:10px; margin-left:20px; margin-right:20px;
+  border-radius:50%;
+  border:0.1rem solid #eee;
+  background-color: #207D3E;
+  color:#fff;
+}
+
+.faq_note button {
+  width: 90%; height: auto;
+  padding:1rem;
+  font-size: 1.3rem;
+  text-align: left;
+  position: relative;
+}
+
+.faq_note>dl>dt>button::after {
+  content: ""; display: block;
+  position:absolute;
+  top:0; right:20px;
+  width:20px; height:100%;
+  background-image: url("../../img/salady/sub_event/top.png");
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size:contain;
+}
+
+.faq_note button:hover { text-decoration: underline;}
+.faq_note button:focus { outline:0; text-decoration: underline;}
+
+.faq_note dd {
+  display: none;
+  width: 100%; height:auto;
+  font-size:1.1rem; line-height:30px;
+  padding:2rem; box-sizing: border-box;
+  background-color: #eee;
+}
+
+/* #sideBox ----------------------------------------- */
+#sideBox {
+  position: fixed;
+  width:3%; height:50px; min-height: 70px;
+  bottom:100px; left:95%;
+}
+
+.top_btn {
+  position: absolute;
+  left:0; top:100%;
+  width:100%; height:30px;
+}
+
+.top_btn a {
+  display: block;
+  width:100%; height:30px;
+  margin-top:40px; font-size: 0;
+  background-image: url("../../img/salady/top.png");
+  background-repeat: no-repeat; background-position: center; 
+  background-size: contain;
+}
+
+
+ /* #footBox ----------------------------------------------- */
+ #footBox {
+  width:100%; height:auto;
+  margin-top:100px;
+  border-top: 1px solid #808080;
+}
+
+#footBox > .logo {
+  float:left;
+  width:150px; height:150px;
+  margin:auto;  margin-left:15%; margin-top: 40px;
+  background-image: url("../../img/salady/salady_logo.png");
+  background-repeat: no-repeat; background-position: center;
+  background-size: 50%;
+}
+
+.company_info ul {
+  float:left;
+  width:40%; height:200px;
+  margin-top:30px;  margin-left:10%;
+}
+
+.company_info li {
+  font-size: 16px;
+  line-height:30px; font-weight: 400;
+  color:#000000;
+}
+
+.info_03 { float:left; margin:auto; }
+.info_04 { float:left; margin-left:30px; }
+.info_05 { margin-top:30px; }
+
+.info_06 {
+  margin-top:30px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.sns {
+  float:left;
+  width:15%; height:auto;
+  margin-top:90px;
+}
+.sns ul { width:100%; height:50px; }
+.sns li {
+  float:left;
+  width:50px; height:50px;
+  margin-left:30px;
+  background-repeat: no-repeat;  background-position:center;
+  background-size : 100%;
+}
+.sns li > a { display:block; width:100%; height:100%; }
+
+.insta { background-image: url("../../img/salady/instagram.png"); }
+
+.facebook { background-image: url("../../img/salady/facebook.png"); }
+
+.blog { background-image: url("../../img/salady/blog.png"); }
+
