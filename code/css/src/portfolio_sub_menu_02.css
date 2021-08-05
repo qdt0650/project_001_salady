@@ -2,12 +2,12 @@
 
 
 /* #headBox --------------------------------------------------------------- */
-#headBox{ width:100%; height:auto; }
-  
+#headBox{ width:100%; height:150px; background-color: #fff; }
+
 #headBox > .logo {
   float:left;
   width:170px; height:150px;
-  margin:auto; margin-left:150px; 
+  margin-left:150px; 
   background-image: url("../../img/salady/salady_logo.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -18,7 +18,6 @@
 #naviBox {
   float:right;
   width:80%; height:150px;
-  margin:auto;
 }
 
 .navigation ul { width:100%; height:150px; }
@@ -32,18 +31,18 @@
 }
 
 .navigation li > a {
-  font-size: 25.6px;
+  font-size: 1.6rem;
   text-align: center;
   color:#000000; 
 }
 
 li:last-child { margin-right:0; }
 
-.navigation a:hover { border-bottom:1.6992px solid #000000; }
-.navigation a:focus { outline:0; text-shadow:1px 1px 1px #808080;}
+.navigation a:hover { color: #207D3E; }
+.navigation a:focus { outline:0; color: #207D3E;}
 
 /* #menu_view_01 ------------------------------------------------------- */
-#menu_view_01 { width:100%; height:900px; background-color: #e6e6e6; }
+#menu_view_01 { width:100%; height:900px; background-color: #f8f8f8; }
 .bowl_01 {
   float:left;
   width:50%; height:100%;

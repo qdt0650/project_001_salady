@@ -45,8 +45,8 @@
 
 li:last-child { margin-right:0; }
 
-.navigation a:hover { border-bottom:1.7px solid #000000; }
-.navigation a:focus { outline:0; text-shadow:1px 1px 1px #808080;}
+.navigation a:hover { color: #207D3E; }
+.navigation a:focus { outline:0; color: #207D3E;}
 
 /* #innerBox --------------------------------------------------------------- */
 #innerBox{
@@ -81,13 +81,14 @@ li:last-child { margin-right:0; }
   margin-top:100px;
 }
 .menu_list ul {
-  width:50%; height:30px;
+  width:50%; height:50px;
   margin:auto;
+  border:0.1rem solid #333;
 }
 
 .menu_list li {
   float:left;
-  width:25%; height:30px;
+  width:25%; height:50px;
 }
 
 .menu_list li:last-child { margin-right: 0px;}
@@ -95,7 +96,7 @@ li:last-child { margin-right:0; }
 .menu_list li:after,
 .menu_list li::after {
   content:""; display: block;
-  width:1px; height:20px;
+  width:1px; height:50px;
   transform:translateY(-100%);
   background-color: #aaa;
 }
@@ -103,57 +104,24 @@ li:last-child { margin-right:0; }
 
 
 .menu_list button {
-  width:100%; height:100%; 
-  font-size: 1.8rem; 
+  width:100%; height:50px; 
+  font-size: 1.3rem; 
   text-align: center; text-transform:capitalize;
   box-sizing: border-box;
 }
 
 .menu_list li button:focus,
-.menu_list li button:hover { color:#208653; font-weight: 500;}
+.menu_list li button:hover { 
+  background-color: #f6f6f6; 
+  color:#207D3E; 
+}
 /* ------------------------------------- */
-.menu_img {
-  width:100%; height:700px;
-  overflow: hidden;
-}
+.menu_img { overflow: hidden; width:100%; height: 1000px; }
 
-.bowl {
-  display: block;
+.menu_img > ul {
   width:100%; height:auto;
 }
-
-.bowl ul {
-  width:100%; height:700px;
-  margin:auto; margin-top: -50px;
-}
-.bowl li {
-  float:left;
-  width:20%; height:170px;
-  margin:auto;
-  margin-left:170px; margin-top: 120px;
-  text-align: center;
-  background-size:50%;
-  background-repeat: no-repeat;  background-position: center;
-}
-.bowl_01 { background-image: url("../../img/salady/menu_01.png"); }
-.bowl_02 { background-image: url("../../img/salady/menu_02.png"); }
-.bowl_03 { background-image: url("../../img/salady/menu_03.png"); }
-.bowl_04 { background-image: url("../../img/salady/menu_10.png"); }
-.bowl_05 { background-image: url("../../img/salady/menu_11.png"); }
-
-.bowl h3 { margin-top: 180px; }
-.bowl p { text-transform: uppercase; }
-/* ------------------------------ */
-.sand {
-  width:100%; height:auto;
-}
-
-.sand ul {
-  width:100%; height:700px;
-  margin:auto; margin-top: -50px;
-}
-
-.sand li {
+.menu_img ul > li {
   float:left;
   width:20%; height:170px;
   margin-left:170px; margin-top: 120px;
@@ -161,45 +129,43 @@ li:last-child { margin-right:0; }
   background-size:50%;
   background-repeat: no-repeat;  background-position: center;
 }
-.sand_01 { background-image: url("../../img/salady/chicken_tomato.png"); }
-.sand_02 { background-image: url("../../img/salady/egg_bacon.png"); }
-.sand_03 { background-image: url("../../img/salady/shallot_salmon.png"); }
-
-
-.sand h3 { margin-top: 180px; }
-.sand p { text-transform: uppercase; }
-/* ------------------------------ */
-.salad {
-  display: block;
-  width:100%; height:auto;
-}
-
-.salad ul {
-  width:100%; height:700px;
-  margin:auto; margin-top: -50px;
-}
-.salad li {
-  float:left;
-  width:20%; height:170px;
-  margin-left:170px; margin-top: 120px;
-  text-align: center;
-  background-size:50%;
-  background-repeat: no-repeat;  background-position: center;
-}
-.salad_01 { background-image: url("../../img/salady/menu_01.png"); }
-.salad_02 { background-image: url("../../img/salady/menu_02.png"); }
-.salad_03 { background-image: url("../../img/salady/menu_03.png"); }
-.salad_04 { background-image: url("../../img/salady/menu_04.png"); }
-.salad_05 { background-image: url("../../img/salady/menu_05.png"); }
-.salad_06 { background-image: url("../../img/salady/menu_06.png"); }
-
-.salad h3 { margin-top: 180px; }
-.salad p { text-transform: uppercase; }
+.menu_img h3 { margin-top: 180px; }
+.menu_img p { text-transform: uppercase; }
 
 .menu_img li:hover { background-size:52%;}
 .menu_img a:hover { font-size:1.2rem; }
 .menu_img a:focus { font-size:1.2rem; }
 
+.bowl_01 { background-image: url("../../img/salady/sub_menu/bowl_01.png"); }
+.bowl_02 { background-image: url("../../img/salady/sub_menu/bowl_02.png"); }
+.bowl_03 { background-image: url("../../img/salady/sub_menu/bowl_03.png"); }
+.bowl_04 { background-image: url("../../img/salady/sub_menu/bowl_04.png"); }
+.bowl_05 { background-image: url("../../img/salady/sub_menu/bowl_05.png"); }
+.bowl_06 { background-image: url("../../img/salady/sub_menu/bowl_06.png"); }
+.bowl_07 { background-image: url("../../img/salady/sub_menu/bowl_07.png"); }
+.bowl_08 { background-image: url("../../img/salady/sub_menu/bowl_08.png"); }
+.bowl_09 { background-image: url("../../img/salady/sub_menu/bowl_09.png"); }
+/* ------------------------------ */
+.sand_01 { background-image: url("../../img/salady/sub_menu/sand_01.png"); }
+.sand_02 { background-image: url("../../img/salady/sub_menu/sand_02.png"); }
+.sand_03 { background-image: url("../../img/salady/sub_menu/sand_03.png"); }
+/* ------------------------------ */
+.salad_01 { background-image: url("../../img/salady/sub_menu/bowl_08.png"); }
+.salad_02 { background-image: url("../../img/salady/sub_menu/bowl_02.png"); }
+.salad_03 { background-image: url("../../img/salady/sub_menu/bowl_05.png"); }
+.salad_04 { background-image: url("../../img/salady/sub_menu/bowl_09.png"); }
+.salad_05 { background-image: url("../../img/salady/sub_menu/bowl_03.png"); }
+.salad_06 { background-image: url("../../img/salady/sub_menu/bowl_04.png"); }
+.salad_07 { background-image: url("../../img/salady/sub_menu/bowl_06.png"); }
+/* ------------------------------ */
+.wrap_01 { background-image: url("../../img/salady/sub_menu/wrap_01.png"); }
+.wrap_02 { background-image: url("../../img/salady/sub_menu/wrap_02.png"); }
+.wrap_03 { background-image: url("../../img/salady/sub_menu/wrap_03.png"); }
+.wrap_04 { background-image: url("../../img/salady/sub_menu/wrap_04.png"); }
+.wrap_05 { background-image: url("../../img/salady/sub_menu/wrap_05.png"); }
+.wrap_06 { background-image: url("../../img/salady/sub_menu/wrap_06.png"); }
+.wrap_07 { background-image: url("../../img/salady/sub_menu/wrap_07.png"); }
+.wrap_08 { background-image: url("../../img/salady/sub_menu/wrap_08.png"); }
 
 /* #sideBox ----------------------------------------- */
 #sideBox {

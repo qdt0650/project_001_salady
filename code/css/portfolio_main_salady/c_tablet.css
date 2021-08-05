@@ -46,8 +46,8 @@
   
   li:last-child { margin-right:0; }
   
-  .navigation a:hover { border-bottom:1.7px solid #000000; }
-  .navigation a:focus { outline:0; text-shadow:1px 1px 1px #808080;}
+  .navigation a:hover { color: #207D3E; }
+  .navigation a:focus { outline:0; color: #207D3E;}
   
   
   /* #promotionBox -------------------------------------------------------- */
@@ -104,6 +104,28 @@
   .button li.act a { width:2.5rem;  background-color: #e6e6e6; }
   .button a:hover { box-shadow:3px 2px 2px #808080;}
   .button a:focus { outline:0;  box-shadow:3px 3px 3px #808080;}
+
+  .pro_btn {
+    position: absolute;
+    width:100%; height:50px;
+    top:45%;
+  }
+  .pro_btn button {
+    width:30px; height:30px;
+    margin-left:30px; margin-right:30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+ .pro_next_btn { 
+    float:right;
+    background-image: url("../../img/salady/next.png");
+
+  }
+ .pro_prev_btn { 
+    float: left;
+    background-image: url("../../img/salady/prev.png");
+  }
 
   #viewArea_01{
     background-image: url("../../img/salady/pro_01.png");
@@ -244,31 +266,34 @@
   
   /* #subviewBox ------------------------------------------------------------ */
 
-  #subviewBox { width:100%; height:auto; margin-top:5%; }
+  #subviewBox { width:100%; height:auto; margin-top:50px; }
   #subviewBox h2 {
     text-align: center; text-transform: capitalize;
     font-size: 1.8rem; font-weight: 500;  
     line-height: 70px;
   }
-  #subviewBox h3 { width:0; height:0; overflow: hidden; }
+  #subviewBox h3 { font-size: 0; }
   
-  .event_list { overflow: hidden; width:100%; height:400px; margin-top:5%; }
+  .event_list { width:100%; height:500px; margin-top:50px; }
   
   .event_list li {
     display: inline-block;
-    width:37%; height:400px;
-    margin-left: 12%;
+    width:35%; height:500px; 
+    margin:auto;
+    margin-left:10%;
   }
   
-  .thum img { width:100%; height:300px; margin: auto; }
+  .thum img { width:100%; height:400px; margin: auto; }
   
   .tt {
-    padding:30px;
+    padding:2rem;
     border-bottom: 0.5px solid #171717;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: left;  text-transform: capitalize;
   }
-  .tt img { float:right; width:5%; height:20px; margin-right: -10%; }
+  .tt img { float:right; width:10px; height:20px; margin-right: -10%; }
+
+  .event_list li:last-child { width:0; height:0; overflow:hidden;}
 
   
   /* #linkBox ------------------------------------------------------------ */

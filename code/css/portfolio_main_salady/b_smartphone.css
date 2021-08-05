@@ -23,27 +23,46 @@
   #naviBox {
     float:left;
     width:10%; height:50px;
+    padding:0.5rem;
     box-sizing: border-box;
   }
   
-  .navigation ul { 
-    width:100%; height:auto;
-    margin-left:50%;
+  .gnb_btn{
+    position: relative; z-index: 100;
+    width: 100%; height: 100%;
   }
-  
+  .gnb_btn button { width: 100%; height: 100%; }
+  .line {
+    display: block; position: absolute;
+    width: 100%; height: 2px; margin:auto;
+    background-color: #171717;
+    transition:all 300ms linear;
+  }
+  .line1 { transform:translateY(-0.8rem); }
+  .line3 { transform: translateY(0.8rem); }
+
+  .navigation {
+    display: none;
+    position: fixed;
+    width:100%; height: 100%;
+    top:0; left:0;
+    padding:1rem; padding-top:4rem; box-sizing: border-box;
+    background-color: #fff;
+  }
+  .navigation ul {
+    width: 100%; height: 100%;
+    padding:0.5rem;
+    box-sizing: border-box;
+  }
   .navigation li {
-    float:left;
-    width:10%; height:50px;
-    background-image: url("../../img/salady/line.png");
-    background-position: 50% 50%;  background-repeat: no-repeat;
+    font-weight: 600;
+    padding:1rem; 
+    border-bottom: 1px solid #777;
+    box-sizing: border-box;
   }
   
-  .navigation li > a { display:none; }
-  
-  li:last-child { margin-right:0; }
-  
-  .navigation a:hover { border-bottom:1.7px solid #000000; }
-  .navigation a:focus { outline:0; text-shadow:1px 1px 1px #808080;}
+  .navigation a:hover { color: #207D3E; }
+  .navigation a:focus { outline:0; color: #207D3E;}
   
   
   /* #promotionBox -------------------------------------------------------- */
@@ -57,7 +76,6 @@
   .pro_view { overflow: hidden;  width:100%; height:200px; }
   
   .pro_view ul { width:300%; height:100%; margin:auto; }
-  
   .pro_view li {
     float:left;
     width:calc(100% / 3); height:100%;
@@ -100,6 +118,28 @@
   .button a:hover { box-shadow:1px 2px 2px #808080;}
   .button a:focus { outline:0;  box-shadow:1px 2px 2px #808080;}
 
+  .pro_btn {
+    position: absolute;
+    width:100%; height:50px;
+    top:45%;
+  }
+  .pro_btn button {
+    width:15px; height:15px;
+    margin-left:15px; margin-right:15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+ .pro_next_btn { 
+    float:right;
+    background-image: url("../../img/salady/next.png");
+
+  }
+ .pro_prev_btn { 
+    float: left;
+    background-image: url("../../img/salady/prev.png");
+  }
+
   #viewArea_01{
     background-image: url("../../img/salady/pro_01.png");
     background-color: #f1c856;
@@ -122,7 +162,7 @@
   #viewBox{
     position: relative;
     width: 100%; height:400px;
-    margin:auto; margin-top: 1.875rem;
+    margin:auto; margin-top: 100px;
     box-sizing: border-box;
   }
   
@@ -239,22 +279,21 @@
     font-size:1.25rem;
     font-weight: 400;
   }
-  #subviewBox h3 { width:0; height:0; overflow: hidden; }
+  #subviewBox h3 { font-size: 0; }
   
   .event_list {
-    overflow: hidden;
-    width:100%; height:800px;
+    width:100%; height:600px;
     margin-top:50px;
   }
   
   .event_list li {
     display: inline-block;
-    width:43%; height:400px;
+    width:43%; height:300px;
     margin:auto;
     margin-left: 30%;
   }
   
-  .thum img { width:100%; height:250px; margin: auto; }
+  .thum img { width:100%; height:200px; margin: auto; }
   
   .tt {
     width:80%; height:auto;
@@ -265,6 +304,7 @@
   }
   .tt img { float:right; width:7%; height:20%; margin-right: -10%; }
 
+  .event_list li:last-child { width:0; height:0; overflow:hidden;}
   
   /* #linkBox ------------------------------------------------------------ */
   #linkBox{
@@ -332,7 +372,6 @@
   /* #footBox ----------------------------------------------- */
   #footBox {
     width:100%; height:auto;
-    box-sizing: border-box;
     background-color: #fff;
     border-top: 1px solid #808080;
   }
@@ -346,19 +385,17 @@
   }
   
   .company_info ul {
-    float:left;
-    width:100%; height:150px; 
-    margin-top: 30px; margin-left:3%;
+    width:90%; height:150px; 
+    margin:auto; margin-top: 30px;
+    box-sizing:border-box;
   }
   
   .company_info li {
-    font-size: 9px;
-    line-height:30px; font-weight: 400;
-    color:#000000;
+    width:100%; height: auto;
+    font-size: 9px; font-weight: 400;
+    line-height:30px; 
+    text-align: center;
   }
-  
-  .info_03 { float:left; margin:auto; }
-  .info_04 { margin-top:30px; }
   
   .info_06 {
     margin-top:30px;
@@ -367,12 +404,6 @@
   }
   
   .sns {
-    float:right;
-    width:20%; height:auto;
-    margin-top:50px;  margin-right:80px;
+    width:0; height:0;
+    overflow:hidden;
   }
-  
-  .insta {display: none;}
-  .facebook {display: none;}
-  .blog {display: none;}
-}
