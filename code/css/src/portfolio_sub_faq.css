@@ -162,7 +162,7 @@ li:last-child { margin-right:0; }
 }
 
 /* #faqBox ---------------------------------------------- */
-#faqBox { width:100%; height:100px; }
+#faqBox { width:100%; height:auto; }
 
 .faq_list { width:100%; height:100px;}
 .faq_list ul {
@@ -198,3 +198,5 @@ li:last-child { margin-right:0; }
 
 .faq_list li a:focus,
 .faq_list ul a:hover { border-bottom:2px solid #207D3E; color:#207D3E; }
+/* --------------------- */
+.faq_note { width: 100%; height:1000px;}
