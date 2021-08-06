@@ -1,0 +1,238 @@
+/* b_smartphone.css */
+
+/* 스마트폰 (max-width:767px)*/
+
+@media screen and (max-width:767px) {
+  #wrap {
+    position: relative;
+    width:100%; min-width:320px; max-width: 767px;
+    height:auto;
+  }
+  
+  /* #headBox --------------------------------------------------------------- */
+  #headBox{ width:100%; height:60px; }
+  
+  #headBox > .logo {
+    position: absolute; top: 0; left: 0; right: 0;
+    width:9%; height:60px; margin:auto;
+    background-image: url("../../img/salady/salady_logo.png");
+    background-repeat: no-repeat; background-position: center;
+    background-size: contain;
+  }
+  .logo a{ display: block; width: 100%; height: 100%;}
+
+  #naviBox {
+    float:left;
+    width:10%; height:60px;
+    padding:0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .gnb_btn{
+    position: relative; z-index: 100;
+    width: 100%; height: 100%;
+  }
+  .gnb_btn button { width: 100%; height: 100%; }
+  .line {
+    display: block; position: absolute;
+    width: 100%; height: 2px; margin:auto;
+    background-color: #171717;
+    transition:all 300ms linear;
+  }
+  .line1 { transform:translateY(-0.8rem); }
+  .line3 { transform: translateY(0.8rem); }
+
+  .navigation {
+    display: none;
+    position: fixed;
+    width:100%; height: 500px;
+    top:0; left:0;
+    padding:1rem; padding-top:4rem; box-sizing: border-box;
+    background-color: #fff;
+  }
+  .navigation ul {
+    width: 100%; height: 100%;
+    padding:0.5rem;
+    box-sizing: border-box;
+  }
+  .navigation li {
+    font-weight: 600;
+    padding:1rem; 
+    border-bottom: 1px solid #777;
+    box-sizing: border-box;
+  }
+  
+  .navigation a:hover { color: #207D3E; }
+  .navigation a:focus { outline:0; color: #207D3E;}
+  
+  
+  /* #innerBox --------------------------------------------------------------- */
+  #innerBox{ width:100%; height:auto; }
+  
+  #innerBox h3 {
+    font-size: 3rem; font-weight:500;
+    text-align: center; line-height: 550px;
+    text-transform:uppercase;
+  }
+  
+  .inner_title {
+    width:100%; height:600px;
+    background-image: url("../../img/salady/sub_menu/inner_img.png");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+  }
+  
+  /* #menuBox ----------------------------------------------------------------- */
+  #menuBox { width:100%; height:auto; }
+  
+  .menu_list {
+    width:100%; height:100px;
+    margin-top:100px;
+  }
+  .menu_list ul {
+    width:50%; height:40px;
+    margin:auto;
+    border:0.1rem solid #333;
+  }
+  
+  .menu_list li {
+    float:left;
+    width:25%; height:40px;
+  }
+  
+  .menu_list li:last-child { margin-right: 0px;}
+  
+  .menu_list li:after,
+  .menu_list li::after {
+    content:""; display: block;
+    width:1px; height:40px;
+    transform:translateY(-100%);
+    background-color: #aaa;
+  }
+  .menu_list li:first-child:after { width:0; height:0;}
+  
+  
+  .menu_list button {
+    width:100%; height:40px; 
+    font-size: 0.8rem; 
+    text-align: center; text-transform:capitalize;
+    box-sizing: border-box;
+  }
+  
+  .menu_list li button:focus,
+  .menu_list li button:hover { 
+    background-color: #f6f6f6; 
+    color:#207D3E; 
+  }
+  /* ------------------------------------- */
+  .menu_img { overflow: hidden; width:100%; height: 1200px; }
+  
+  .menu_img > ul { width:100%; height:auto; }
+  .menu_img ul > li {
+    float:left;
+    width:30%; height:170px;
+    margin-left:15%; margin-top: 50px;
+    font-size:0.7rem;  text-align: center;
+    background-size:90% auto;
+    background-repeat: no-repeat;  background-position: center;
+  }
+  .menu_img h3 { margin-top: 150px; }
+  .menu_img p { text-transform: uppercase; }
+  
+  .menu_img li:hover { background-size:95%;}
+  .menu_img a:hover { font-size:0.8rem; }
+  .menu_img a:focus { font-size:0.8rem; }
+  
+  .bowl_01 { background-image: url("../../img/salady/sub_menu/bowl_01.png"); }
+  .bowl_02 { background-image: url("../../img/salady/sub_menu/bowl_02.png"); }
+  .bowl_03 { background-image: url("../../img/salady/sub_menu/bowl_03.png"); }
+  .bowl_04 { background-image: url("../../img/salady/sub_menu/bowl_04.png"); }
+  .bowl_05 { background-image: url("../../img/salady/sub_menu/bowl_05.png"); }
+  .bowl_06 { background-image: url("../../img/salady/sub_menu/bowl_06.png"); }
+  .bowl_07 { background-image: url("../../img/salady/sub_menu/bowl_07.png"); }
+  .bowl_08 { background-image: url("../../img/salady/sub_menu/bowl_08.png"); }
+  .bowl_09 { background-image: url("../../img/salady/sub_menu/bowl_09.png"); }
+  /* ------------------------------ */
+  .sand_01 { background-image: url("../../img/salady/sub_menu/sand_01.png"); }
+  .sand_02 { background-image: url("../../img/salady/sub_menu/sand_02.png"); }
+  .sand_03 { background-image: url("../../img/salady/sub_menu/sand_03.png"); }
+  /* ------------------------------ */
+  .salad_01 { background-image: url("../../img/salady/sub_menu/bowl_08.png"); }
+  .salad_02 { background-image: url("../../img/salady/sub_menu/bowl_02.png"); }
+  .salad_03 { background-image: url("../../img/salady/sub_menu/bowl_05.png"); }
+  .salad_04 { background-image: url("../../img/salady/sub_menu/bowl_09.png"); }
+  .salad_05 { background-image: url("../../img/salady/sub_menu/bowl_03.png"); }
+  .salad_06 { background-image: url("../../img/salady/sub_menu/bowl_04.png"); }
+  .salad_07 { background-image: url("../../img/salady/sub_menu/bowl_06.png"); }
+  /* ------------------------------ */
+  .wrap_01 { background-image: url("../../img/salady/sub_menu/wrap_01.png"); }
+  .wrap_02 { background-image: url("../../img/salady/sub_menu/wrap_02.png"); }
+  .wrap_03 { background-image: url("../../img/salady/sub_menu/wrap_03.png"); }
+  .wrap_04 { background-image: url("../../img/salady/sub_menu/wrap_04.png"); }
+  .wrap_05 { background-image: url("../../img/salady/sub_menu/wrap_05.png"); }
+  .wrap_06 { background-image: url("../../img/salady/sub_menu/wrap_06.png"); }
+  .wrap_07 { background-image: url("../../img/salady/sub_menu/wrap_07.png"); }
+  .wrap_08 { background-image: url("../../img/salady/sub_menu/wrap_08.png"); }
+  
+  /* #sideBox ----------------------------------------- */
+  #sideBox {
+    position: fixed;
+    width:5%; height:50px; min-height: 70px;
+    bottom:100px; left:95%;
+  }
+  
+  .top_btn {
+    position: absolute;
+    left:0; top:100%;
+    width:100%; height:30px;
+  }
+  
+  .top_btn a {
+    display: block;
+    width:100%; height:30px;
+    margin-top:40px; font-size: 0;
+    background-image: url("../../img/salady/top.png");
+    background-repeat: no-repeat; background-position: center; 
+    background-size: contain;
+  }
+  
+  
+   /* #footBox ----------------------------------------------- */
+   #footBox {
+    width:100%; height:auto;
+    border-top: 0.5px solid #808080;
+    background-color: #fff;
+  }
+  
+  #footBox > .logo {
+    width:50px; height:50px;
+    margin:auto; margin-top: 20px;
+    background-image: url("../../img/salady/salady_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;  background-size: contain;
+  }
+  
+  .company_info ul {
+    width:90%; height:150px; 
+    margin:auto; margin-top: 30px;
+    box-sizing:border-box;
+  }
+  
+  .company_info li {
+    width:100%; height: auto;
+    font-size: 0.6rem;
+    text-align: center; line-height:30px; 
+  }
+  
+  .info_06 {
+    margin-top:30px;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+  
+  .sns {
+    width:0; height:0;
+    overflow:hidden;
+  }
+}
