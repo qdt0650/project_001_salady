@@ -20,7 +20,7 @@
       
       var proBox = $('#promotionBox');
       var sideBox = $('#sideBox');
-      
+     
       var viewBox = $('#viewBox');
       var menuBtn = viewBox.children('.menu_btn');
       var nextBtn = menuBtn.children('.menu_next_btn');

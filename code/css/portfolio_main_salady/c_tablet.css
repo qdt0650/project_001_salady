@@ -5,7 +5,7 @@
   #wrap {
     position: relative;
     width:100%; min-width:768px; max-width: 1279px;
-    height:auto;  margin:auto;
+    height:auto;
   }
   
   /* #headBox --------------------------------------------------------------- */
@@ -25,15 +25,13 @@
   #naviBox {
     float:right;
     width:75%; height:130px;
-    margin:auto;
   }
   
-  .navigation ul { width:100%; height:150px; }
+  .navigation ul { width:100%; height:130px; }
   
   .navigation li {
     float:left;
     width:16%; height:30px;
-    margin:auto;  
     margin-top: 60px; margin-left: 15px;
     text-align: center;
   }
@@ -41,7 +39,6 @@
   .navigation li > a {
     font-size: 1.4rem;
     text-align: center;
-    color:#000000; 
   }
   
   li:last-child { margin-right:0; }
