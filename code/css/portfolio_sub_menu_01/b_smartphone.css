@@ -134,10 +134,10 @@
     width:30%; height:170px;
     margin-left:15%; margin-top: 50px;
     font-size:0.7rem;  text-align: center;
-    background-size:90% auto;
+    background-size:70% auto;
     background-repeat: no-repeat;  background-position: center;
   }
-  .menu_img h3 { margin-top: 150px; }
+  .menu_img h3 { margin-top: 180px; }
   .menu_img p { text-transform: uppercase; }
   
   .menu_img li:hover { background-size:95%;}

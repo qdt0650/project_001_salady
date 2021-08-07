@@ -1,11 +1,26 @@
 // portfolio_sub_menu-3.js
-
 (function($){
 // jQuery
 
-// parallax(시간차) : 스크롤, 마우스 움직임에 의해 시차를 느끼게 만드는 효과
+var naviBox = $('#naviBox');
+var gnbBtn = naviBox.find('.gnb_btn').children('button');
+var naviG = naviBox.find('.navigation');
 
-// 1. 스크롤 값 파악하기 ( scrollTop() )
+var timed = 500;
 
+// gnb 버튼
+gnbBtn.on('click', function(e){
+  e.preventDefault();
+
+  var hasAct = naviBox.hasClass('act');
+  if(hasAct){
+    naviG.slideDown(timed);
+    naviBox.removeClass('act');
+  }else{
+    naviG.slideUp(timed/2);
+    naviBox.addClass('act');
+  }
+});
 
 })(jQuery);
+

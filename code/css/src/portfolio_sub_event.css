@@ -73,7 +73,7 @@ li:last-child { margin-right:0; }
 
 .event_list { width:100%; height:100px; }
 .event_list ul {
-  width:40%; height:50px;
+  width:50%; height:50px;
   margin:auto;
   border:0.1rem solid #333;
 }
@@ -102,7 +102,6 @@ li:last-child { margin-right:0; }
   box-sizing: border-box;
   font-size: 1.2rem; text-transform:uppercase;
 }
-
 .event_list li:nth-child(1) { color:#207D3E; }
 .event_list li a:focus,
 .event_list li a:hover { background-color: #f6f6f6; color:#207D3E; }
