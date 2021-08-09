@@ -27,3 +27,4 @@ faqBtn.on('click',function(e){
 });
 
 })(jQuery);
+
