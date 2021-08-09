@@ -26,29 +26,4 @@ faqBtn.on('click',function(e){
   }
 });
 
-// noteDt.on('click', function(){
-//   var thisI = $(this).index();
-//   console.log(thisI);
-// });
-
-// noteDd.on('click', function(){
-//   var thisI = $(this).index();
-//   console.log(thisI);
-// });
-// noteDt.on('click', function(e){
-//   e.preventDefault();
-// var hasAct = noteDt.hasClass('act');
-// if(hasAct){
-//   noteDd.slideDown();
-//   noteDd.siblings().removeClass('act');
-// }else{
-//   noteDd.slideUp();
-//   noteDd.addClass('act');
-// }
-// });
-
-
-
-
-
 })(jQuery);
