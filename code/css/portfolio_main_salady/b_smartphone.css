@@ -7,6 +7,8 @@
     width:100%; min-width:320px; max-width: 767px;
     height:auto;
   }
+
+  .popup { width:0; height:0; overflow: hidden;}
   
   /* #headBox --------------------------------------------------------------- */
   #headBox{ width:100%; height:auto; }
