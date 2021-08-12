@@ -34,7 +34,7 @@
     float:left;
     width:16%; height:30px;
     margin-top:40px;
-    margin-left: 20px; text-align: center;
+    margin-left: 15px; text-align: center;
   }
   
   .navigation li > a { font-size: 1.4rem; }
@@ -175,9 +175,8 @@
     background-size: contain;
   }
   
-  
-   /* #footBox ----------------------------------------------- */
-   #footBox {
+  /* #footBox ----------------------------------------------- */
+  #footBox {
     width:100%; height:auto;
     border-top: 1px solid #808080;
     background-color: #fff;
