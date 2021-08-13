@@ -1,0 +1,243 @@
+/* portfolio_sub_store/c_tablet.css */
+
+@media screen and (min-width:768px) and (max-width:1279px) {
+  #wrap {
+    width:100%; min-width:768px; max-width: 1279px;
+    height:auto;
+  }
+  
+  /* #headBox --------------------------------------------------------------- */
+  #headBox{ width:100%; height:130px; }
+
+  #headBox > .logo {
+    float:left;
+    width:7%; height:130px;
+    margin-left:80px; 
+    background-image: url("../../img/salady/salady_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .logo a { display: block; width:100%; height:100%; }
+  
+  #naviBox {
+    float:right;
+    width:75%; height:130px;
+  }
+  
+  .navigation ul { width:100%; height:130px;  }
+  
+  .navigation li {
+    float:left;
+    width:16%; height:auto;
+    margin-top:55px; margin-left: 15px;
+    text-align: center;
+  }
+  
+  .navigation li > a { font-size: 1.4rem; }
+  
+  li:last-child { margin-right:0; }
+  
+  .navigation a:hover { color: #207D3E; }
+  .navigation a:focus { outline:0; color: #207D3E;}
+  
+  /* #innerBox --------------------------------------------------------------- */
+  #innerBox{
+    width:100%; height:auto;
+    margin:auto;
+  }
+  
+  #innerBox h3 {
+    font-size: 70px; font-weight:500;
+    text-align: center;
+    text-transform:uppercase; 
+    line-height: 550px;
+    color:#000000;
+  }
+  
+  .inner_title {
+    width:100%;height:600px;
+    margin:auto;
+    background-image: url("../../img/salady/store.png");
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+  }
+  
+  /* #linkBox ------------------------------------------------------------ */
+  #linkBox{
+    width:100%; height:200px;
+    margin-top:100px;
+  }
+  #linkBox h2 { 
+    text-align: center; 
+    font-size: 1.5rem; font-weight:400;
+    text-transform:capitalize;
+  }
+  
+  .area_search {
+    float:left;
+    width:10%; height:40px;
+    margin:auto; margin-left:20%;
+    margin-top:50px;
+    padding-top:0.5rem;
+    font-size: 0.9rem; text-align: center;
+    border:1px solid #333333;
+    box-sizing: border-box;
+  }
+  
+  .store_search {
+    float:left;
+    width:30%; height:40px;
+    margin-top:50px;  margin-left:5%;
+    border:1px solid #333333;
+  }
+  
+  .store_search input {
+    float:left;
+    width:100%; height:40px;
+  }
+  .store_search input::placeholder { font-size: 0.9rem; }
+  
+  .btn_search {
+    float:left;
+    width:10%; height:40px;
+    margin-top:50px;  margin-left:5%;
+    border:1px solid #333333;
+  }
+  
+  .btn_search > button {
+    width:100%; height:40px;
+    font-size: 1rem; text-align: left;
+    background-image: url("../../img/salady/search.png");
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: 90% 50%;
+  }
+  
+  /* #storeBox ------------------------------------------------------ */
+  #storeBox {
+    width:100%; height:auto;
+    margin-top:50px;
+  }
+  
+  .store_list_01 {
+    width:80%; height:250px;
+    margin:auto; 
+    border-top: 0.5px solid #808080;
+  }
+  .store_list_02 {
+    width:80%; height:250px;
+    margin:auto; margin-top:50px;
+    border-top: 0.5px solid #808080;
+  }
+  .store_list_03 {
+    width:80%; height:250px;
+    margin:auto; margin-top:50px;
+    border-top: 0.5px solid #808080;
+  }
+  
+  .store_img > img {
+    float:left;
+    width:25%; height:250px;
+  }
+  
+  .store_text {
+    float: left;
+    width:50%; height:250px;
+    margin-top: 10px; margin-left:5%;
+  }
+  .store_text h4 { font-size:1.1rem; margin-top:10px; margin-left:20px;}
+  
+  .store_text ul { width:100%; height:auto; margin-top:10px; }
+  .store_text li {
+    float: left;
+    width:90%; height:auto;
+    padding:1rem;
+    font-size: 0.8rem;
+  }
+  
+  .store_text li > img {
+    float:left;
+    margin-right:10px;
+  }
+  
+  /* ------------------------- */
+  .store_btn {
+    float:right;
+    width:10%; height:250px;
+  }
+  .store_view {
+    display: inline-block;
+    width:100%; height:40px;
+    margin-top:100px;
+    border:1px solid #000000;
+  }
+  .store_view > a {
+    font-size:0.7rem;
+    text-align: center;
+  }
+  .store_btn > button a:hover { font-weight:700; }
+  .store_btn > button a:focus { font-weight:700; }
+  
+  /* #sideBox ----------------------------------------- */
+  #sideBox {
+    position: fixed;
+    width:3%; height:50px; min-height: 70px;
+    bottom:100px; left:50%; margin-left:45%;
+  }
+  
+  .top_btn {
+    position: absolute;
+    left:0; top:100%;
+    width:100%; height:30px;
+  }
+  
+  .top_btn a {
+    display: block;
+    width:100%; height:30px;
+    margin-top:40px; font-size: 0;
+    background-image: url("../../img/salady/top.png");
+    background-repeat: no-repeat; background-position: center; 
+    background-size: contain;
+  }
+  
+  
+  /* #footBox ----------------------------------------------- */
+  #footBox {
+    width:100%; height:auto;
+    border-top: 1px solid #808080;
+    margin-top:50px;
+  }
+  
+  #footBox > .logo {
+    width:60px; height:60px;
+    margin:auto; margin-top: 20px;
+    background-image: url("../../img/salady/salady_logo.png");
+    background-repeat: no-repeat;
+    background-position: center;  background-size: contain;
+  }
+  
+  .company_info ul {
+    width:90%; height:150px; 
+    margin:auto; margin-top: 30px;
+    box-sizing:border-box;
+  }
+  
+  .company_info li {
+    width:100%; height: auto;
+    font-size: 0.8rem;
+    text-align: center; line-height:30px; 
+  }
+  
+  .info_06 {
+    margin-top:30px;
+    line-height: 70px;
+    text-transform: uppercase;
+  }
+  
+  .sns {
+    width:0; height:0;
+    overflow:hidden;
+  }
+}

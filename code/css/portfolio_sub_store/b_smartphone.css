@@ -1,9 +1,9 @@
-/* portfolio_sub_menu_02/b_smartphone.css */
+/* portfolio_sub_store/b_smartphone.css */
 
 @media screen and (max-width:767px) {
   #wrap {
-    width:100%; min-width:320px; max-width:767px;
-    height: auto;
+    width:100%; min-width:320px; max-width: 767px;
+    height:auto;
   }
   
   /* #headBox --------------------------------------------------------------- */
@@ -61,67 +61,148 @@
   
   .navigation a:hover { color: #207D3E; }
   .navigation a:focus { outline:0; color: #207D3E;}
-
-  /* #menu_view_01 ------------------------------------------------------- */
-  #menu_view_01 { width:100%; height:500px; }
-  .bowl_01 {
-    width:100%; height:100px;
-    margin-top:50px;
-    background-image: url("../../img/salady/menu_01.png");
+  
+  /* #innerBox --------------------------------------------------------------- */
+  #innerBox{
+    width:100%; height:auto;
+    margin:auto;
+  }
+  
+  #innerBox h3 {
+    font-size:3rem; font-weight:500;
+    text-align: center;
+    text-transform:uppercase; 
+    line-height: 400px;
+  }
+  
+  .inner_title {
+    width:100%;height:400px;
+    margin:auto;
+    background-image: url("../../img/salady/store.png");
+    background-size:100% 100%;
     background-repeat: no-repeat;
-    background-size: contain; background-position: center;
+    background-attachment:fixed;
+  }
+  
+  /* #linkBox ------------------------------------------------------------ */
+  #linkBox{
+    width:100%; height:200px;
+    margin-top:100px;
+  }
+  #linkBox h2 { 
+    text-align: center; 
+    font-size: 1.2rem; font-weight:400;
+    text-transform:capitalize;
+  }
+  
+  .area_search {
+    float:left;
+    width:65px; height:30px;
+    margin:auto; margin-left:5%;
+    margin-top:50px;
+    padding-top:0.5rem;
+    font-size: 0.7rem; text-align: center;
+    border:1px solid #333333;
     box-sizing: border-box;
   }
   
-  .menu_info {
-    display: inline-block;
+  .store_search {
+    float:left;
+    width:145px; height:30px;
+    margin-top:50px;  margin-left:5%;
+    border:1px solid #333333;
+  }
+  
+  .store_search input {
+    float:left;
+    width:100%; height:30px;
+  }
+  .store_search input::placeholder { font-size: 0.6rem; }
+  
+  .btn_search {
+    float:left;
+    width:40px; height:30px;
+    margin-top:50px;  margin-left:5%;
+    border:1px solid #333333;
+  }
+  
+  .btn_search > button {
+    width:100%; height:30px;
+    font-size: 0.8rem; text-align:center;
+  }
+  
+  /* #storeBox ------------------------------------------------------ */
+  #storeBox {
     width:100%; height:auto;
-    padding:1rem; text-align: center;
-    box-sizing: border-box;
+    margin-top:10px;
   }
-  .menu_info > h3 {
-    font-size:1rem; font-weight:300;
-    text-transform:lowercase;
+  
+  .store_list_01 {
+    width:90%; height:200px;
+    margin:auto; 
+    border-top: 0.5px solid #808080;
   }
-  .menu_info > h4 {
-    font-size:1.2rem; line-height: 50px;
-    color:#17633D;
+  .store_list_02 {
+    width:90%; height:200px;
+    margin:auto; margin-top:50px;
+    border-top: 0.5px solid #808080;
   }
-  .menu_info > p { 
-    margin-bottom: 20px;
-    font-size:1rem; line-height: 30px; 
+  .store_list_03 {
+    width:90%; height:200px;
+    margin:auto; margin-top:50px;
+    border-top: 0.5px solid #808080;
   }
-  /* --------------------- */
-  .menu_table {
-    display: inline-block;
-    width:100%; height:200px;
-    padding:1rem;
+  
+  .store_img > img { width:0; height:0; overflow: hidden;  }
+  
+  .store_text {
+    width:100%; height:auto;
+    margin:auto;
+  }
+  .store_text h4 { 
     text-align: center;
-    background-color: #fff;
-    border:0.5px solid #333;
+    font-size:1rem;
+    margin-top:10px;
+  }
+  
+  .store_text ul { width:100%; height:auto; margin-top:10px; }
+  .store_text li {
+    float: left;
+    width:100%; height:auto;
+    padding:0.5rem;
+    font-size: 0.7rem;
     box-sizing: border-box;
   }
-  .menu_table caption {
-    width: 100%; height:auto;
-    font-size: 1rem; font-weight: 700;
-    line-height: 35px;
+  
+  .store_text li > img {
+    float:left;
+    margin-right:10px;
   }
-  .menu_table tr th { 
-    width: 100px;
-    font-size: 0.9rem;
-    text-align: left; line-height: 20px;  
+  
+  /* ------------------------- */
+  .store_btn {
+    float: left;
+    width:100%; height:auto;
+    margin-top:20px;
+    text-align: center;
   }
-  .menu_table tr td { 
-    width: 100px;
-    font-size: 0.9rem;
-    text-align: left;
+  .store_view {
+    width:30%; height:30px;
+    margin:auto;
+    border:1px solid #333333;
   }
+  .store_view > a {
+    font-size:0.7rem;
+    text-align: center;
+  }
+  .store_btn > button a:hover { font-weight:700; }
+  .store_btn > button a:focus { font-weight:700; }
   
   /* #sideBox ----------------------------------------- */
   #sideBox {
     position: fixed;
-    width:5%; height:50px; min-height: 70px;
-    bottom:100px; left:90%;
+    width:3%; height:50px; min-height: 70px;
+    bottom:100px; left:50%; margin-left:45%;
   }
   
   .top_btn {
@@ -138,6 +219,7 @@
     background-repeat: no-repeat; background-position: center; 
     background-size: contain;
   }
+  
   
   /* #footBox ----------------------------------------------- */
   #footBox {
@@ -177,5 +259,4 @@
     width:0; height:0;
     overflow:hidden;
   }
-  
 }
